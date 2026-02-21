@@ -1,0 +1,61 @@
+// MENUDEF is a script section that defines custom in-game menus, including their 
+// layout, options, behavior, and how players interact with them.
+
+// https://zdoom.org/w/index.php?title=MENUDEF
+// https://zdoom.org/w/index.php?title=Menus
+
+DefaultListMenu
+{
+	Font "BigFont", "Gray", "Light Magenta"
+	Selector "Switch1", -28, -1
+	LineSpacing 14
+}
+
+ListMenu "MainMenu"
+{	
+	Position 15, 100
+	
+	TextItem "New Game",  	"n",	"EpisodeMenu"
+	TextItem "Options",     "o",	"CustomOptionsMenu"
+	TextItem "Load Game",	"l",	"LoadGameMenu"
+	TextItem "Save Game",	"s",	"SaveGameMenu"
+	TextItem "Credits",		"i",	"ReadThisMenu"
+	TextItem "Quit Game",	"q",	"QuitMenu"
+}
+
+ListMenu "EpisodeMenu"
+{
+	Position 15, 100
+	
+	StaticText 15, 15, "Episode Select"
+						
+	// ZMAPINFO will handle the episodes definition
+}
+
+ListMenu "SkillMenu"
+{
+	Position 15, 100
+
+	StaticText 15, 15, "Select the difficult"
+	
+	// ZMAPINFO will handle the skill levels
+}
+
+ListMenu "LoadGameMenu"
+{
+	Position 15, 25
+	
+	CaptionItem "$MNU_LOADGAME"
+	Class "LoadMenu"
+	Size Clean
+
+}
+
+ListMenu "SaveGameMenu"
+{
+	Position 15, 25
+
+	CaptionItem "$MNU_SAVEGAME"
+	Class "SaveMenu"
+	Size Clean
+}

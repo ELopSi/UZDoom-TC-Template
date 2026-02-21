@@ -1,0 +1,23 @@
+// TextColors (TEXTCOLO) is a script section that defines custom color codes 
+// for in-game text, allowing messages, HUD elements, and menus to use specific 
+// colors.
+
+LightGreen "Light Green"
+{
+	#003C00  #B4FFB4
+Console:
+	#001E00  #50FF50    0 127
+	#80FF80  #FFFFFF  128 256
+Flat:
+	#66FF99
+}
+
+LightMagenta "Light Magenta"
+{
+	#3C003C  #FFB4FF
+Console:
+	#1E001E  #FF50FF    0 127
+	#FF80FF  #FFFFFF  128 256
+Flat:
+	#FF66CC
+}

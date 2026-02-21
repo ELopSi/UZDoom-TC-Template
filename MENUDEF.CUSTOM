@@ -1,0 +1,65 @@
+// MENUDEF is a script section that defines custom in-game menus, including their 
+// layout, options, behavior, and how players interact with them.
+
+// https://zdoom.org/w/index.php?title=MENUDEF
+// https://zdoom.org/w/index.php?title=Menus
+
+// Create a custom selectable option inside the user 'Custom Options' menu
+OptionMenu "CustomOptionsMenu"
+{
+	// Add the display name, and the link to the page you'll create bellow
+	// When the user trigger the option, the screen will be transported to 
+	// the actual page 'OptionTemplate'
+    Submenu "Custom Menu Option Template", "OptionTemplate"
+}
+
+// 'OptionMenu' will create the page and add the functions
+OptionMenu "OptionTemplate"
+{
+	Title "Custom Menu Option Template"
+	
+	// Add the list option name, the custom variable 'CVAR' and the actual 
+	// list created using 'OptionValue'
+	Option "Template Switch", "Customvariable1", "CustomTemplateSwitch"
+	Option "Template Colors", "CustomVariable2", "CustomTemplateColors"
+	
+	// Add the slider option name, the custom variable 'CVAR' and the limits 
+	// with the increment in the end
+	Slider "Template Slider", "CustomVariable3", 1, 20, 1
+	
+	// Jump line
+	StaticText " "	
+	
+	// Just a static text
+	StaticText "Immutable Text Template"
+	
+	// Display text field name and the custom variable 'CVAR'
+	TextField "Text Field Template", "ExampleVariable1"
+	
+	// Display number field name and the custom variable 'CVAR'
+	NumberField "Number Field Template", "ExampleVariable2", 10, 250, 3
+	
+	// Display input control name and the action to be triggered
+	// When the user selected the input here, any time the user press the 
+	// button the action will occur
+	Control "Input Template", "+attack"	// (+attack = primary fire)
+    
+	// Command name and the actual console command
+	SafeCommand "Warp to E1M1", "map e1m1"
+}
+
+// List of values to choose in the especific custom menu option
+// You'll need create a custom variable 'CVAR' on CVARINFO to store 
+// the current/saved value
+OptionValue "CustomTemplateColors"
+{
+    0, "Red"
+    1, "Blue"
+    2, "Green"
+}
+
+OptionValue "CustomTemplateSwitch"
+{
+    0, "Actived"
+    1, "Deactived"
+}

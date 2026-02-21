@@ -1,0 +1,97 @@
+// ZMAPINFO is a script file that defines level-specific properties, such as 
+// sky textures, music, level labels, par times, cluster assignments, and 
+// special behaviors for maps.
+
+// The GameInfo block inside MAPINFO defines global game-level settings—things 
+// that affect the entire game, not just a single map.
+
+GameInfo
+{	
+	titlepage = "TITLE"
+	creditpage = "CREDIT"
+	titlemusic = "$MUSIC_DM2TTL"
+	titletime = 11
+	advisorytime = 0
+	pagetime = 5
+	chatsound = "misc/chat"
+	finalemusic = "$MUSIC_READ_M"
+	finaleflat = "SLIME16"
+	finalepage = "CREDIT"
+	infopage = "HELP", "CREDIT"
+	quitsound = "menu/quit2"
+	borderflat = "GRNROCK"
+	border = DoomBorder
+	telefogheight = 0
+	defkickback = 100
+	skyflatname = "F_SKY1"
+	translator = "xlat/doom.txt"
+	defaultbloodcolor = "68 00 00"
+	defaultbloodparticlecolor = "ff 00 00"
+	backpacktype = "Backpack"
+	armoricons = "ARM1A0", 0.5, "ARM2A0"
+	//statusbar = "SBARINFO"
+	statusbarclass = "BasicHUD"
+	intermissionmusic = "$MUSIC_DM2INT"
+	intermissioncounter = true
+	weaponslot = 1, "Fist", "Chainsaw"
+	weaponslot = 2, "Pistol"
+	weaponslot = 3, "Shotgun", "SuperShotgun"
+	weaponslot = 4, "Chaingun"
+	weaponslot = 5, "RocketLauncher"
+	weaponslot = 6, "PlasmaRifle"
+	weaponslot = 7, "BFG9000"
+	dimcolor = "30 26 00"
+	dimamount = 0.5
+	bluramount = 0.0
+	menuslidercolor = "Orange"
+	menusliderbackcolor = "White"
+	definventorymaxamount = 25
+	defaultrespawntime = 12
+	defaultdropstyle = 1
+	endoom = "ENDOOM"
+	pickupcolor = "d7 ba 45"
+	quitmessages = "Quitting the template so soon?"
+	menufontcolor_title = "WHITE"
+	menufontcolor_label = "UNTRANSLATED"
+	menufontcolor_value = "GRAY"
+	menufontcolor_action = "GRAY"
+	menufontcolor_header = "GOLD"
+	menufontcolor_highlight = "YELLOW"
+	menufontcolor_selection = "LIGHT MAGENTA"
+	menubackbutton = "M_BACK_D"
+	playerclasses = "DoomPlayer"
+	pausesign = "M_PAUSE"
+	gibfactor = 1
+	cursorpic = "doomcurs"
+	textscreenx = 10
+	textscreeny = 10
+	defaultendsequence = "Inter_Cast"
+	maparrow = "maparrows/arrow.txt", "maparrows/ddtarrow.txt"
+	statscreen_mapnamefont = "*BigFont", "GOLD"
+	statscreen_finishedfont = "*BigFont", "LIGHT MAGENTA"
+	statscreen_enteringfont = "*BigFont", "LIGHT MAGENTA"
+	statscreen_contentfont = "*BigFont", "LIGHT MAGENTA"
+	statscreen_authorFont = "*SmallFont", "LIGHT BLUE"
+	statscreen_coop = "CoopStatusScreen"
+	statscreen_dm = "DeathmatchStatusScreen"
+	statscreen_single = "DoomStatusScreen"
+	messageboxclass = "MessageBoxMenu"
+	helpmenuclass = "ReadThisMenu"
+	menudelegateclass = "DoomMenuDelegate"
+	normforwardmove = 0x19, 0x32
+	normsidemove = 0x18, 0x28
+}
+
+// SpawnNums is a numeric ID used internally by the engine to spawn 
+// an actor by number at runtime. It is not for map editors, that’s
+// what DoomEdNum is for.
+
+SpawnNums
+{
+	
+}
+
+DoomEdNums
+{
+	30000 = "Medal"
+}

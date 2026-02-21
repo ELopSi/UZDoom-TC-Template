@@ -1,0 +1,68 @@
+// ZMAPINFO is a script file that defines level-specific properties, such as 
+// sky textures, music, level labels, par times, cluster assignments, and 
+// special behaviors for maps.
+
+defaultmap
+{
+	nojump
+	nocrouch
+	nofreelook
+}
+
+skill easy
+{
+	EasyBossBrain
+	SpawnFilter = Easy
+	Name = "EASY"
+	Key = "e"
+}
+
+skill normal
+{
+	SpawnFilter = Normal
+	Name = "NORMAL"
+	Key = "n"
+}
+
+skill hard
+{
+	SpawnFilter = Hard
+	Name = "HARD"
+	Key = "h"
+}
+
+clearepisodes
+
+episode MAP01
+{
+	name = "Template Episode 1"
+	key = "1"
+}
+
+episode MAP02
+{
+	name = "Template Episode 2"
+	key = "2"
+}
+
+map MAP01 "First Level Episode 1"
+{
+	levelnum = 1
+	next = "MAP02"
+	secretnext = "MAP31"
+	sky1 = "F_SKY1"
+	cluster = 20
+	par = 60
+	//music = " "
+}
+
+map MAP02 "First Level Episode 2"
+{
+	levelnum = 1
+	next = "MAP01"
+	secretnext = "MAP32"
+	sky1 = "F_SKY1"
+	cluster = 30
+	par = 90
+	//music = " "
+}

@@ -1,0 +1,37 @@
+// DECALDEF is a script definition that specifies a texture or sprite to be 
+// applied as a decal (e.g., bullet holes, blood splatters) on walls, floors, 
+// or ceilings, including properties like size, orientation, and behavior.
+
+// https://zdoom.org/w/index.php?title=DECALDEF
+
+// Decal animation need to be define before they are called
+fader FadeDecalAnimationTemplate
+{
+   DecayStart 0
+   DecayTime 3
+}
+
+decal CustomDecal1 10
+{
+	// Call the animation
+	animator FadeDecalAnimationTemplate
+
+    // The name of the graphic used by the decal. You can apply
+	// the decal offset directly in the image editor
+    pic DECAL1
+	
+    // The image will be shaded
+    //shade "ff ff ff" 
+	
+    // Scaled to 2x of the image's original size
+    x-scale 2
+    y-scale 2
+	
+    // Will be randomly flipped along the X, or Y or both axes
+    randomflipx
+    randomflipy	
+}
+
+// Apply to the rocket
+generator Rocket CustomDecal1
+

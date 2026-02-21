@@ -1,0 +1,3 @@
+// TERRAIN is a script section that defines floor and ceiling textures’ 
+// physical properties, such as friction, movement effects, footstep sounds, 
+// and interactions with actors.

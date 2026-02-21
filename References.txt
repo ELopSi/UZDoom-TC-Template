@@ -1,0 +1,13 @@
+- ZDOOM Classes reference
+https://zdoom.org/w/index.php?title=Classes:Inventory
+https://github.com/UZDoom/UZDoom/tree/trunk/wadsrc/static/zscript
+
+ACS Tutorials by Chubzdoomer
+https://www.youtube.com/playlist?list=PLuDCrjOek9njK8hXkZmTxaU8PWzjzGql7
+
+Introduction ZScript Tutorials by Kris Occhipinti
+https://www.youtube.com/playlist?list=PLcUid3OP_4OVvFYYrai9LQyMl2KMjdy_M
+
+Intermediate ZScript Tutorials by DavidXNewton
+https://www.youtube.com/playlist?list=PL-36gm0W-VKl89pw9lUfF36TJ28bjrNUn
+

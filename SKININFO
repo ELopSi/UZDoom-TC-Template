@@ -1,0 +1,6 @@
+// S_Skin (SKININFO) is a script section that defines custom player skins, 
+// mapping sprites to specific player classes, states, or colors for visual 
+// customization.
+
+Sounds/SwitchSoundOn = "Sounds/SwitchSoundOn.wav"
+Sounds/SwitchSoundOff = "Sounds/SwitchSoundOff.wav"

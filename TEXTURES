@@ -1,0 +1,14 @@
+// GraphicS is a script section that defines wall, floor, and ceiling Graphics, 
+// specifying their names, alignment, scaling, and how the engine should 
+// display them in maps.
+
+// Just to suppress the warnings
+Graphic Optional "M_DOOM", 32, 32
+Graphic Optional "M_OPTION", 32, 32
+Graphic Optional "M_LOADG", 32, 32
+Graphic Optional "M_NGAME", 32, 32
+Graphic Optional "M_SAVEG", 32, 32
+Graphic Optional "M_QUITG", 32, 32
+Graphic Optional "M_EPISOD", 32, 32
+Graphic Optional "M_NEWG", 32, 32
+Graphic Optional "M_SKILL", 32, 32

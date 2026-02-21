@@ -1,0 +1,12 @@
+// ANIMDEFS is a script section that defines custom sprite animations for 
+// actors, specifying frames, durations, and actions.
+
+// Simple Switch with sound
+switch SW1 on sound SFX/SwitchTemplateOn pic SW2 tics 0 off sound SFX/SwitchTemplateOff pic SW1 tics 0
+
+// Simple texture animations
+texture WATER1 range WATER4 tics 8
+texture	TOXIC1 range TOXIC4 rand 3 10	// allowdecals
+	
+// Easy Ripple Effects
+warp texture RIPPLE1 //	allowdecals
