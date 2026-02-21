@@ -1,0 +1,4 @@
+// LOADACS is a lump which supports automatically loading ACS objects 
+// (even for Doom-format maps).
+
+// https://zdoom.org/w/index.php?title=LOADACS
