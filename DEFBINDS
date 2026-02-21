@@ -1,0 +1,8 @@
+// DEFBINDS is a cumulative, text-based lump that sets the default key 
+// binds for the game. The engine will create and populate these sections 
+// with the defaults upon being run for the first time with each game. 
+// If placed in an IWAD, default key binds can be overwritten.
+
+// https://zdoom.org/w/index.php?title=CCMDs:Customization#Bindings
+
+bind backspace "Summon Medal"
