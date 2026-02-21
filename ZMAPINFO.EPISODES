@@ -2,6 +2,8 @@
 // sky textures, music, level labels, par times, cluster assignments, and 
 // special behaviors for maps.
 
+// https://zdoom.org/w/index.php?title=MAPINFO
+
 defaultmap
 {
 	nojump
@@ -9,26 +11,54 @@ defaultmap
 	nofreelook
 }
 
+// Skills definition
+// https://zdoom.org/w/index.php?title=MAPINFO/Skill_definition
+
+skill baby
+{
+	AutoUseHealth
+	AmmoFactor = 2
+	DamageFactor = 0.5
+	EasyBossBrain
+	SpawnFilter = Baby
+	Name = "Super Easy"
+	Key = "s"
+}
+
 skill easy
 {
 	EasyBossBrain
 	SpawnFilter = Easy
-	Name = "EASY"
+	Name = "Easy"
 	Key = "e"
 }
 
 skill normal
 {
+	DefaultSkill
 	SpawnFilter = Normal
-	Name = "NORMAL"
+	Name = "Normal"
 	Key = "n"
 }
 
 skill hard
 {
 	SpawnFilter = Hard
-	Name = "HARD"
+	Name = "Hard"
 	Key = "h"
+}
+
+skill nightmare
+{
+	AmmoFactor = 2
+	FastMonsters
+	InstantReaction
+	DisableCheats
+	MustConfirm
+	RespawnTime = 12
+	SpawnFilter = Nightmare
+	Name = "Ultra Hard"
+	Key = "u"
 }
 
 clearepisodes

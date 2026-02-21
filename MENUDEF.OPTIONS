@@ -80,47 +80,47 @@ OptionValue "PlayerSkin"
 
 OptionMenu "NewPlayerMenu" 
 {
-	Title "$MNU_PLAYERSETUP"
-	PlayerNameField "$PLYRMNU_NAME"
-	PlayerTeamItem "$PLYRMNU_TEAM", "PlayerTeam"
-	PlayerColorItem "$PLYRMNU_PLAYERCOLOR", "PlayerColors"
-	PlayerColorSlider "$PLYRMNU_RED", 0
-	PlayerColorSlider "$PLYRMNU_GREEN", 1
-	PlayerColorSlider "$PLYRMNU_BLUE", 2
-	PlayerClassItem "$PLYRMNU_PLAYERCLASS", "PlayerClass"
-	PlayerSkinItem "$PLYRMNU_PLAYERSKIN", "PlayerSkin"
-	PlayerGenderItem "$PLYRMNU_PLAYERGENDER", "Gender"
-	AutoaimSlider "$PLYRMNU_AUTOAIM"
-	Option "$PLYRMNU_VERTSPREAD", vertspread, "OnOff"
-	PlayerSwitchOnPickupItem "$PLYRMNU_SWITCHONPICKUP", "OffOn"
-	Option "$PLYRMNU_ALWAYSRUN", cl_run, "OnOff"
-	Class "NewPlayerMenu"
+	Title 						"$MNU_PLAYERSETUP"
+	PlayerNameField 			"$PLYRMNU_NAME"
+	PlayerTeamItem 				"$PLYRMNU_TEAM", "PlayerTeam"
+	PlayerColorItem 			"$PLYRMNU_PLAYERCOLOR", "PlayerColors"
+	PlayerColorSlider 			"$PLYRMNU_RED", 0
+	PlayerColorSlider 			"$PLYRMNU_GREEN", 1
+	PlayerColorSlider 			"$PLYRMNU_BLUE", 2
+	PlayerClassItem 			"$PLYRMNU_PLAYERCLASS", "PlayerClass"
+	PlayerSkinItem 				"$PLYRMNU_PLAYERSKIN", "PlayerSkin"
+	PlayerGenderItem 			"$PLYRMNU_PLAYERGENDER", "Gender"
+	AutoaimSlider 				"$PLYRMNU_AUTOAIM"
+	Option 						"$PLYRMNU_VERTSPREAD", vertspread, "OnOff"
+	PlayerSwitchOnPickupItem 	"$PLYRMNU_SWITCHONPICKUP", "OffOn"
+	Option 						"$PLYRMNU_ALWAYSRUN", cl_run, "OnOff"
+	Class 						"NewPlayerMenu"
 }
 
 // The old player menu is kept for mods that redefine it.
 ListMenu "PlayerMenu"
 {
-	StaticTextCentered 160, 6, "$MNU_PLAYERSETUP"
-	Font "SmallFont"
-	Linespacing 14
-	Position 48, 36
-	MouseWindow 0, 220
-	PlayerDisplay 220, 48, "00 07 00", "40 53 40", 1, "PlayerDisplay"
-	ValueText "$PLYRMNU_TEAM", "Team"
-	ValueText "$PLYRMNU_PLAYERCOLOR", "Color"
-	Linespacing 10
-	Slider "$PLYRMNU_RED", "Red", 0, 255, 16
-	Slider "$PLYRMNU_GREEN", "Green", 0, 255, 16
-	Linespacing 14
-	Slider "$PLYRMNU_BLUE", "Blue", 0, 255, 16
-	ValueText "$PLYRMNU_PLAYERCLASS", "Class"
-	ValueText "$PLYRMNU_PLAYERSKIN", "Skin"
-	ValueText "$PLYRMNU_PLAYERGENDER", "Gender", "Gender"
-	Slider "$PLYRMNU_AUTOAIM", "Autoaim", 0, 35, 1
-	ValueText "$PLYRMNU_VERTSPREAD", vertspread, "OnOff"
-	ValueText "$PLYRMNU_SWITCHONPICKUP", "Switch", "OffOn"
-	ValueText "$PLYRMNU_ALWAYSRUN", "AlwaysRun", "OnOff"
-	Class "PlayerMenu"
+	StaticTextCentered 	160, 6, 	"$MNU_PLAYERSETUP"
+	Font				"SmallFont"
+	Linespacing 		14
+	Position 			48, 36
+	MouseWindow 		0, 220
+	PlayerDisplay 		220, 48, "00 07 00", "40 53 40", 1, "PlayerDisplay"
+	ValueText 			"$PLYRMNU_TEAM", "Team"
+	ValueText			"$PLYRMNU_PLAYERCOLOR", "Color"
+	Linespacing 		10
+	Slider 				"$PLYRMNU_RED", "Red", 0, 255, 16
+	Slider 				"$PLYRMNU_GREEN", "Green", 0, 255, 16
+	Linespacing 		14
+	Slider 				"$PLYRMNU_BLUE", "Blue", 0, 255, 16
+	ValueText 			"$PLYRMNU_PLAYERCLASS", "Class"
+	ValueText 			"$PLYRMNU_PLAYERSKIN", "Skin"
+	ValueText 			"$PLYRMNU_PLAYERGENDER", "Gender", "Gender"
+	Slider 				"$PLYRMNU_AUTOAIM", "Autoaim", 0, 35, 1
+	ValueText 			"$PLYRMNU_VERTSPREAD", vertspread, "OnOff"
+	ValueText 			"$PLYRMNU_SWITCHONPICKUP", "Switch", "OffOn"
+	ValueText 			"$PLYRMNU_ALWAYSRUN", "AlwaysRun", "OnOff"
+	Class 				"PlayerMenu"
 }
 
 //-------------------------------------------------------------------------------------------
@@ -138,18 +138,18 @@ OptionValue "Layouts"
 
 OptionMenu "CustomizeControls" 
 {
-	Title "$CNTRLMNU_TITLE"
-
-	Submenu    "$CNTRLMNU_ACTION"      , "ActionControlsMenu"
-	Submenu    "$CNTRLMNU_WEAPONS"     , "WeaponsControlMenu"
-	Submenu    "$CNTRLMNU_INVENTORY"   , "InventoryControlsMenu"
-	Submenu    "$MAPCNTRLMNU_CONTROLS" , "MapControlsMenu"
-	Submenu    "$CNTRLMNU_OTHER"       , "OtherControlsMenu"
-	Submenu    "$CNTRLMNU_POPUPS"      , "StrifeControlsMenu"
-	Submenu    "$MNU_MULTIPLAYER"        , "ChatControlsMenu"
-	StaticText ""
-	Option "$CNTRLMNU_LAYOUT",			"cl_defaultconfiguration", "Layouts"
-	SafeCommand "$OPTMNU_DEFAULTS",		"resetb2defaults"
+	Title 		"$CNTRLMNU_TITLE"
+	Submenu    	"$CNTRLMNU_ACTION", 		"ActionControlsMenu"
+	Submenu    	"$CNTRLMNU_WEAPONS", 		"WeaponsControlMenu"
+	Submenu    	"$CNTRLMNU_INVENTORY", 		"InventoryControlsMenu"
+	Submenu    	"$MAPCNTRLMNU_CONTROLS",	"MapControlsMenu"
+	Submenu    	"$CNTRLMNU_OTHER", 			"OtherControlsMenu"
+	Submenu    	"$CNTRLMNU_POPUPS",			"StrifeControlsMenu"
+	Submenu    	"$MNU_MULTIPLAYER",			"ChatControlsMenu"
+	
+	StaticText 	""
+	Option 		"$CNTRLMNU_LAYOUT",			"cl_defaultconfiguration", "Layouts"
+	SafeCommand "$OPTMNU_DEFAULTS",			"resetb2defaults"
 }
 
 OptionMenu "ActionControlsMenu" 

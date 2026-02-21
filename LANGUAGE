@@ -3,12 +3,12 @@
 
 [enu default]
 
-TXT_GAME_NAME = "Template";
+TXT_GAME_NAME 	= "Template";
 
-SKILL_BABY = "Skill 1";
-SKILL_EASY = "Skill 2";
-SKILL_NORMAL = "Skill 3";
-SKILL_HARD = "Skill 4";
+SKILL_BABY 		= "Skill 1";
+SKILL_EASY 		= "Skill 2";
+SKILL_NORMAL 	= "Skill 3";
+SKILL_HARD 		= "Skill 4";
 SKILL_NIGHTMARE = "Skill 5";
 
-TXT_MAP01 = "Template Map Level";
+TXT_MAP01 		= "Template Map Level";

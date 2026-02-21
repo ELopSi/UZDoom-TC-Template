@@ -5,9 +5,9 @@
 
 IWAD
 {
-	Name = "zdoom-template"
-	IWADName = "zdoom-template.pk3"
-	Autoname = "ZdoomTemplate"
-	Config = "ZdoomTemplateConfig"
+	Name = "UZDoomTCTemplate"
+	IWADName = "UZDoomTCTemplate.ipk3"
+	Autoname = "UZdoomTCTemplate"
+	Config = "UZdoomTCTemplateConfig"
 	BannerColors = "ff ff ff", "c9 00 00"
 }

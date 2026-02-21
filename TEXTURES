@@ -1,4 +1,4 @@
-// GraphicS is a script section that defines wall, floor, and ceiling Graphics, 
+// TEXTURES is a script section that defines wall, floor, and ceiling Graphics, 
 // specifying their names, alignment, scaling, and how the engine should 
 // display them in maps.
 

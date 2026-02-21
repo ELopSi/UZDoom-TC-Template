@@ -32,6 +32,6 @@ decal CustomDecal1 10
     randomflipy	
 }
 
-// Apply to the rocket
+// Apply the CustomDecal1 to the rocket
 generator Rocket CustomDecal1
 
