@@ -1,0 +1,15 @@
+// ZDoom supports a special XHAIRS lump that can be used to add custom 
+// crosshairs to the choices under "Crosshair" in the Display Options menu.
+
+// Crosshair number is the number that corresponds to the number in the lump 
+// name of the crosshair graphic.
+
+// https://zdoom.org/w/index.php?title=XHAIRS
+
+1 "Cross 1"
+2 "Cross 2"
+3 "X"
+4 "Circle"
+5 "Angle"
+6 "Triangle"
+7 "Dot"
