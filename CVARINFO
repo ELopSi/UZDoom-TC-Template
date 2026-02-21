@@ -9,9 +9,9 @@
 // User   -> Per-user changes, not stored in savegames, written to config file. (shared)
 // nosave -> Per-user changes, not stored in savegames, written to config file. (private)
 
-server bool CustomVariable1 = true;
-user string CustomVariable2 = "CustomString";
-nosave int CustomVariable3 = 123;
+server bool	CustomVariable1 = true;
+user string	CustomVariable2 = "CustomString";
+nosave int	CustomVariable3 = 123;
 
-nosave string ExampleVariable1 = "ExampleStringText";
-nosave int ExampleVariable2 = 0;
+nosave string	ExampleVariable1 = "ExampleStringText";
+nosave int		ExampleVariable2 = 0;

@@ -1,4 +1,9 @@
 // ALTHUDCF is an optional text lump that can change the appearance of 
 // UZDoom's Alternative HUD. It currently offers one functionality; 
-// the ability to set alternative icons for inventory items to be used by the HUD
+// the ability to set alternative icons for inventory items to be used by the HUD.
 
+// https://zdoom.org/w/index.php?title=ALTHUDCF
+
+// Set the item and the swap sprite
+health 	HEALTH
+clip MEDAA0
