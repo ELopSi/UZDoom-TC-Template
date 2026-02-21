@@ -1,6 +1,8 @@
 // SNDINFO is a script section that defines sound resources, specifying 
 // each sound’s lump name, pitch, priority, and how it is used in the game.
 
+// https://zdoom.org/w/index.php?title=SNDINFO
+
 // Sound Identifier and the path
 SFX/SwitchTemplateOn = "Sounds/SFX/SwitchSoundOn.wav"
 SFX/SwitchTemplateOff = "Sounds/SFX/SwitchSoundOff.wav"

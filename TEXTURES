@@ -2,6 +2,8 @@
 // specifying their names, alignment, scaling, and how the engine should 
 // display them in maps.
 
+// https://zdoom.org/w/index.php?title=TEXTURES
+
 // Just to suppress the warnings
 Graphic Optional "M_DOOM", 32, 32
 Graphic Optional "M_OPTION", 32, 32
@@ -12,3 +14,7 @@ Graphic Optional "M_QUITG", 32, 32
 Graphic Optional "M_EPISOD", 32, 32
 Graphic Optional "M_NEWG", 32, 32
 Graphic Optional "M_SKILL", 32, 32
+
+// Remove decals for this sprites
+sprite SW1, 16, 16	{ nodecals }
+sprite SW2, 16, 16	{ nodecals }

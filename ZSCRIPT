@@ -2,6 +2,8 @@
 // actors, weapons, inventory, UI, and game logic, allowing advanced modding 
 // far beyond what DECORATE can do.
 
+// https://zdoom.org/w/index.php?title=ZScript
+
 version 4.14.2
 
 #include "Scripts/ZScript/BasicHUD.zs"

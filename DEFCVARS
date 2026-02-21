@@ -1,4 +1,6 @@
 // DEFCVARS is a lump that allows to override the engine's default values 
 // for console variables with new defaults.
 
+// https://zdoom.org/w/index.php?title=DEFCVARS
+
 version 219

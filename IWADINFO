@@ -3,10 +3,12 @@
 // game content, which the engine uses to determine compatibility and load 
 // the correct resources.
 
+// https://zdoom.org/w/index.php?title=IWADINFO
+
 IWAD
 {
 	Name = "UZDoomTCTemplate"
-	IWADName = "UZDoomTCTemplate.ipk3"
+	IWADName = "UZDoom TC Template.ipk3"
 	Autoname = "UZdoomTCTemplate"
 	Config = "UZdoomTCTemplateConfig"
 	BannerColors = "ff ff ff", "c9 00 00"

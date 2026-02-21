@@ -1,9 +1,6 @@
 // MENUDEF is a script section that defines custom in-game menus, including their 
 // layout, options, behavior, and how players interact with them.
 
-// https://zdoom.org/w/index.php?title=MENUDEF
-// https://zdoom.org/w/index.php?title=Menus
-
 // Create a custom selectable option inside the user 'Custom Options' menu
 OptionMenu "CustomOptionsMenu"
 {

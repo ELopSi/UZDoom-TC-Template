@@ -1,3 +1,5 @@
 // VOXELDEF is a script section that defines 3D voxel models, specifying 
 // their sprite source, scaling, rotation, and how they replace or complement 
 // traditional 2D sprites in-game.
+
+// https://zdoom.org/w/index.php?title=VOXELDEF

@@ -2,8 +2,6 @@
 // sky textures, music, level labels, par times, cluster assignments, and 
 // special behaviors for maps.
 
-// https://zdoom.org/w/index.php?title=MAPINFO
-
 defaultmap
 {
 	nojump

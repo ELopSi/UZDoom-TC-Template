@@ -1,3 +1,5 @@
 // MapTranslator (XLAT) is a script section that remaps old Doom map format 
 // elements to new actor or sector types, allowing compatibility with modern 
 // gameplay features and custom mods.
+
+// https://zdoom.org/wiki/Map_translator

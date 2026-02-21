@@ -1,6 +1,8 @@
 // ANIMDEFS is a script section that defines custom sprite animations for 
 // actors, specifying frames, durations, and actions.
 
+// https://zdoom.org/w/index.php?title=ANIMDEFS
+
 // Simple Switch with sound
 switch SW1 on sound SFX/SwitchTemplateOn pic SW2 tics 0 off sound SFX/SwitchTemplateOff pic SW1 tics 0
 

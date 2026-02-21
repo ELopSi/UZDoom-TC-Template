@@ -5,6 +5,8 @@
 // The GameInfo block inside MAPINFO defines global game-level settings—things 
 // that affect the entire game, not just a single map.
 
+// https://zdoom.org/w/index.php?title=MAPINFO
+
 GameInfo
 {	
 	titlepage 					= "TITLE"

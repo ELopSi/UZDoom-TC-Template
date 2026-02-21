@@ -2,17 +2,18 @@
 // for a mod or mapset, including things like title, author, version, 
 // default map, and game-specific settings.
 
-	IWAD 			= "UZDoomTCTemplate"
-	//LOAD 			
-	//NOSPRITERENAME	
+// https://zdoom.org/w/index.php?title=GAMEINFO
 
-	STARTUPTITLE 	= "UZDoom TC Template"
-	STARTUPCOLORS 	= "FFAA00", "000000"
-    STARTUPTYPE 	= "Hexen"
-    //STARTUPSONG
-	//LOADLIGHTS
-	//LOADBRIGHTMAPS 	
-	//LOADWIDESCREEN
-	//DISCORDAPPID 
-	//STEAMAPPID 
-   
+IWAD 			= "UZDoomTCTemplate"
+//LOAD 			
+//NOSPRITERENAME	
+
+STARTUPTITLE 	= "UZDoom TC Template"
+STARTUPCOLORS 	= "FFAA00", "000000"
+STARTUPTYPE 	= "Hexen"
+//STARTUPSONG
+//LOADLIGHTS
+//LOADBRIGHTMAPS 	
+//LOADWIDESCREEN
+//DISCORDAPPID 
+//STEAMAPPID 

@@ -1,6 +1,8 @@
 // LANGUAGE is a script section or file that defines localized text strings, 
 // allowing menus, messages, and in-game text to appear in different languages.
 
+// https://zdoom.org/w/index.php?title=LANGUAGE
+
 [enu default]
 
 TXT_GAME_NAME 	= "Template";

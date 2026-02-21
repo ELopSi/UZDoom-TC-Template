@@ -2,6 +2,8 @@
 // for in-game text, allowing messages, HUD elements, and menus to use specific 
 // colors.
 
+// https://zdoom.org/w/index.php?title=TEXTCOLO
+
 LightGreen "Light Green"
 {
 	#003C00  #B4FFB4

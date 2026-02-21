@@ -2,5 +2,7 @@
 // mapping sprites to specific player classes, states, or colors for visual 
 // customization.
 
+// https://zdoom.org/w/index.php?title=S_SKIN
+
 Sounds/SwitchSoundOn = "Sounds/SwitchSoundOn.wav"
 Sounds/SwitchSoundOff = "Sounds/SwitchSoundOff.wav"
