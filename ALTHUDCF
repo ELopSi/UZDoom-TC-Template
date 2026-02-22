@@ -4,6 +4,6 @@
 
 // https://zdoom.org/w/index.php?title=ALTHUDCF
 
-// Set the item and the swap sprite
+// Set the target and the swap sprite
 health 	HEALTH
-clip MEDAA0
+clip 	MEDAA0

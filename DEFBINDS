@@ -6,3 +6,17 @@
 // https://zdoom.org/w/index.php?title=CCMDs:Customization#Bindings
 
 bind backspace "Summon Medal"
+
+bind f1 "menu_game"
+bind f2 "menu_load"
+bind f3 "menu_save"
+bind f4 "menu_quit"
+
+bind f5 	"none"
+bind f6 	"none"
+bind f7 	"none"
+bind f8 	"none"
+bind f9 	"none"
+bind f10 	"none"
+bind f11 	"none"
+bind f12 	"none"

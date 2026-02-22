@@ -4,13 +4,13 @@
 
 // https://zdoom.org/w/index.php?title=GAMEINFO
 
-IWAD 			= "UZDoomTCTemplate"
+IWAD 			= "UZDoom TC Template"
 //LOAD 			
 //NOSPRITERENAME	
 
 STARTUPTITLE 	= "UZDoom TC Template"
 STARTUPCOLORS 	= "FFAA00", "000000"
-STARTUPTYPE 	= "Hexen"
+//STARTUPTYPE
 //STARTUPSONG
 //LOADLIGHTS
 //LOADBRIGHTMAPS 	

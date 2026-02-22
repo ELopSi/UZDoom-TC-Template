@@ -18,3 +18,7 @@ Graphic Optional "M_SKILL", 32, 32
 // Remove decals for this sprites
 sprite SW1, 16, 16	{ nodecals }
 sprite SW2, 16, 16	{ nodecals }
+
+// You do not need to add sprites in here to use in game, unless you are
+// defining composite sprites, shades, managing offsets/scaling, removing 
+// decals or combine multiple patches into one sprite

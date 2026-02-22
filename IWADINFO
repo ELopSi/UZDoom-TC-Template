@@ -7,8 +7,8 @@
 
 IWAD
 {
-	Name = "UZDoomTCTemplate"
-	IWADName = "UZDoom TC Template.ipk3"
+	Name = "UZDoom Total Conversion Template"
+	IWADName = "UZDoomTCTemplate.ipk3"
 	Autoname = "UZdoomTCTemplate"
 	Config = "UZdoomTCTemplateConfig"
 	BannerColors = "ff ff ff", "c9 00 00"
