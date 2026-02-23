@@ -22,8 +22,9 @@ Lock 1
 Lock 2
 {
 	TemplateKey
+	TemplateBossKey
 	Medal
 	
-	RemoteMessage "You need a Template Key and at least one Medal to open this door!"
+	RemoteMessage "You need a Template Key and Template Boss key to open this door and at least one Medal!"
 	MapColor 255 0 255
 }
