@@ -1,4 +1,39 @@
 // REVERBS is a script section that defines custom reverb effects for sectors, 
 // controlling how sounds echo or reverberate in different areas of a map.
 
+// It contains a list of predefined or custom reverb presets, each 
+// with a unique name and ID (like 30 0 for "Castle Alcove"). Each preset 
+// specifies a detailed set of audio parameters (e.g., DecayTime, RoomHF,
+// ReflectionsDelay) that control how sounds echo and decay within a space,
+// simulating environments like caves, hallways, or underwater areas.
+
+// These presets are referenced by the SoundEnvironment thing (ednum 9048) 
+// in a map. When a player enters a zone defined by zoneboundary lines,
+// the reverb effect from the corresponding preset in the REVERBS lump is 
+// applied to all sounds played within that area. 
+
+// 'SoundEnvironment' thing (ednum 9048) with (Arg1 '30', Arg2 '0') will
+// apply the Castle Alcove reverb in the area.
+
 // https://zdoom.org/w/index.php?title=REVERBS
+
+"Castle Alcove" 30 0
+{
+  Environment 20
+  EnvironmentDiffusion 0.890
+  RoomHF -600
+  RoomLF -2000
+  DecayTime 1.640
+  DecayHFRatio 0.870
+  DecayLFRatio 0.310
+  Reflections -100
+  ReflectionsDelay 0.007
+  Reverb -500
+  ReverbDelay 0.034
+  EchoTime 0.138
+  EchoDepth 0.080
+  HFReference 5168.600
+  LFReference 139.500
+  bDecayHFLimit true
+  bEchoTimeScale true
+}

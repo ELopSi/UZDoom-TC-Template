@@ -6,3 +6,11 @@
 // Sound Identifier and the path
 SFX/SwitchTemplateOn = "Sounds/SFX/SwitchSoundOn.wav"
 SFX/SwitchTemplateOff = "Sounds/SFX/SwitchSoundOff.wav"
+
+// --------------------------------------------------------
+
+// AMBIENT SOUND
+
+// https://zdoom.org/w/index.php?title=Ambient_sound
+
+$ambient 1 SFX/SwitchTemplateOff point periodic 60 .5
