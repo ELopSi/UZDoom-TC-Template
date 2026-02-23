@@ -14,3 +14,20 @@ class TemplateKey : doomkey
 			loop;
 	}
 }
+
+class TemplateBossKey : doomkey
+{
+	Default
+	{
+		Inventory.Pickupmessage "You got the Template Boss Key!";
+		Inventory.Icon "TKEYB0";
+	}
+	
+	States
+	{
+		Spawn:
+			TKEY B 5;
+			TKEY B 5 bright;
+			loop;
+	}
+}
