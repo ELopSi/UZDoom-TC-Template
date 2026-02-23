@@ -15,6 +15,8 @@
 // 'SoundEnvironment' thing (ednum 9048) with (Arg1 '30', Arg2 '0') will
 // apply the Castle Alcove reverb in the area.
 
+// You can use 'reverbedit' command with built-in UI to test
+
 // https://zdoom.org/w/index.php?title=REVERBS
 
 "Castle Alcove" 30 0

@@ -3,3 +3,27 @@
 // for actions and events.
 
 // https://zdoom.org/w/index.php?title=SNDSEQ
+
+// Non-UDMF way, place the 'SoundSequence' thing in the map door/platform sector
+// and set the index number in the arg index.
+
+// With UDMF, apply the name identifier in the sector 'other properties', 
+// no need to place any thing in the map. 
+
+:DoorTemplateSoundSequence
+	
+	door 1	// Type and index number
+	
+	volume 100							// Initial volume
+	playloop SFX/SwitchTemplateOn 	20	// Loop until the door fully open (time in TICS)
+	stopsound SFX/SwitchTemplateOff		// Play one time in the end
+end
+
+:PlatformTemplateSoundSequence
+	
+	platform 1
+	
+	volume 100
+	playloop SFX/SwitchTemplateOff 	15
+	stopsound SFX/SwitchTemplateOn
+end
