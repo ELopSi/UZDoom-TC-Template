@@ -2,7 +2,7 @@ class TemplateKey : doomkey
 {
 	Default
 	{
-		Inventory.Pickupmessage "You got the Template Key!";
+		Inventory.Pickupmessage "$PICKUP_TKEYA";
 		Inventory.Icon "TKEYA0";
 	}
 	
@@ -19,7 +19,7 @@ class TemplateBossKey : doomkey
 {
 	Default
 	{
-		Inventory.Pickupmessage "You got the Template Boss Key!";
+		Inventory.Pickupmessage "$PICKUP_TKEYB";
 		Inventory.Icon "TKEYB0";
 	}
 	

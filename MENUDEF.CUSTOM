@@ -1,7 +1,7 @@
 // MENUDEF is a script section that defines custom in-game menus, including their 
 // layout, options, behavior, and how players interact with them.
 
-// Create a custom selectable option inside the user 'Custom Options' menu
+// Create a custom selectable option inside the user 'Custom Options Menu'
 OptionMenu "CustomOptionsMenu"
 {
 	// Add the display name, and the link to the page you'll create bellow

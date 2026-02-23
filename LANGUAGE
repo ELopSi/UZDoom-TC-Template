@@ -4,13 +4,9 @@
 // https://zdoom.org/w/index.php?title=LANGUAGE
 
 [enu default]
+PICKUP_TKEYA = "You got the Template Key!";
+PICKUP_TKEYB = "You got the Boss Template Key!";
 
-TXT_GAME_NAME 	= "Template";
-
-SKILL_BABY 		= "Skill 1";
-SKILL_EASY 		= "Skill 2";
-SKILL_NORMAL 	= "Skill 3";
-SKILL_HARD 		= "Skill 4";
-SKILL_NIGHTMARE = "Skill 5";
-
-TXT_MAP01 		= "Template Map Level";
+[pt]
+PICKUP_TKEYA = "Você pegou a chave Template!";
+PICKUP_TKEYB = "Você pegou a chave Template do Chefão!";
