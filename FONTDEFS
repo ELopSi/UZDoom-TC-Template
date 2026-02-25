@@ -2,3 +2,18 @@
 // sprites, character widths, spacing, and how text is rendered on the screen.
 
 // https://zdoom.org/w/index.php?title=FONTDEFS
+
+// With ZDoom-family source ports, it is easy to create custom fonts
+// using the following lumps:
+
+// CONFONT.lmp	- Console font
+// SMALLFNT.lmp	- Message font
+// BIGFONT.lmp	- Main menu and title font
+
+// A great tool for font creation is 'Doom Font Genesis' by ErmacMKIII:
+// Source 		- https://github.com/ErmacMKIII/DoomFontGenesis
+// Tutorial		- https://www.youtube.com/watch?v=9ONdout3rnU
+
+// Font formats:
+// FON1	- Used for console fonts
+// FON2 - Used for small and big fonts

@@ -27,7 +27,7 @@ OptionMenu "CustomOptionsMenu"
 	Submenu "$OPTMNU_VIDEO",			"VideoModeMenu"
 	
 	StaticText 							" "
-	Submenu "$OS_TITLE", 				"os_Menu"
+	Submenu "$OS_TITLE",				"os_Menu"
 	
 	StaticText 							" "
 	SafeCommand	"$OPTMNU_DEFAULTS",		"reset2defaults"
@@ -39,8 +39,8 @@ OptionMenu "CustomOptionsMenu"
 	Command "$OPTMNU_OPENCONFIG",		"openconfig"
 	Command "$OPTMNU_OPENSCREENSHOTS",	"openscreenshots"
 	Command "$OPTMNU_OPENSAVES",		"opensaves"
+	
 	StaticText 							" "
-
 }
 
 //-------------------------------------------------------------------------------------------
@@ -153,9 +153,9 @@ OptionMenu "CustomizeControls"
 
 OptionMenu "ActionControlsMenu" 
 {
-	Title "$CNTRLMNU_ACTION_TITLE"
-	ScrollTop 2
-	StaticTextSwitchable "$CNTRLMNU_SWITCHTEXT1", "$CNTRLMNU_SWITCHTEXT2", "ControlMessage"
+	Title 					"$CNTRLMNU_ACTION_TITLE"
+	ScrollTop 				2
+	StaticTextSwitchable 	"$CNTRLMNU_SWITCHTEXT1", "$CNTRLMNU_SWITCHTEXT2", "ControlMessage"
 
 	StaticText ""
 	Control    "$CNTRLMNU_ATTACK"           , "+attack"

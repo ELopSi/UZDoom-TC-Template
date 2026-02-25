@@ -24,3 +24,15 @@ Object LightPillar
 {
 	Frame LIGH { Light TemplatePulseLight }
 }
+
+// Glow effect in the floor/ceiling flats/sprites
+glow
+{
+	flats
+	{
+		TOXIC1
+		TOXIC2
+		TOXIC3
+		TOXIC4
+	}
+}

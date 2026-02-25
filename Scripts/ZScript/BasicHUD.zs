@@ -21,7 +21,7 @@ class BasicHUD : BaseStatusBar
 		
 		// HEALTH -------------------
 		let customHealthString = String.Format("%d", CPlayer.health);
-		let customHealthPosition = (40, 178);
+		let customHealthPosition = (40, 174);
 				
 		// ARMOR -------------------
 		let armorCount = 0;
@@ -37,7 +37,7 @@ class BasicHUD : BaseStatusBar
 		}
 		
 		let customArmorString = String.Format("%d", armorCount);
-		let customArmorPosition = (40, 160);
+		let customArmorPosition = (40, 156);
 		
 		// MEDAL -------------------
 		let medalCount = 0;
@@ -53,7 +53,7 @@ class BasicHUD : BaseStatusBar
 		}
 		
 		let customMedalString = String.Format("Medal: %d", medalCount);
-		let customMedalPosition = (315, 190);
+		let customMedalPosition = (305, 185);
 		
 		// DRAW HUD -------------------
 		Super.Draw(state, TicFrac);

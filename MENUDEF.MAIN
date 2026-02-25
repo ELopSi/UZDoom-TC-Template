@@ -6,7 +6,7 @@
 
 DefaultListMenu
 {
-	Font "BigFont", "GRAY", "Light Magenta"
+	Font "BIGFONT", "Gray", "Untranslated"
 	Selector "SW1", -28, -1
 	LineSpacing 14
 }
