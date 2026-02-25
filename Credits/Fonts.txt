@@ -1,0 +1,13 @@
+Bigfont cortesy by:
+- Brett "Mechadon" Harrell
+- http://mekworx.phenomer.net
+
+Smallfont cortesy by:
+- NeuralStunner
+- https://www.realm667.com
+
+*All fonts used in this template are for placeholder and learning purposes only.*
+
+When you create your own game using this template, please make sure to 
+use your own fonts or properly credit all authors if you use any graphics 
+created by others.
