@@ -98,4 +98,5 @@ DoomEdNums
 	30000 = "Medal"
 	30001 = "TemplateKey"
 	30002 = "TemplateBossKey"
+	30003 = "LightPillar"
 }

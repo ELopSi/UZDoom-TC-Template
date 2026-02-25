@@ -1,0 +1,26 @@
+// GLDEFS lumps allow to define several effects that are supported only by 
+// the OpenGL hardware renderer, serving as a system to define advanced 
+// graphical lighting based effects. 
+
+// With OpenGL is possible to create effects (like PointLight, FlickerLight, 
+// PulseLight, and SectorLight) that are automatically attached to actors, 
+// following them on the map and activating based on their animation states. 
+
+// https://zdoom.org/w/index.php?title=GLDEFS
+
+// Standalone pulse light that can be attached to a actor/object.
+pulselight TemplatePulseLight
+{
+	Color 0.0 1 0.0
+	Size 80
+	secondarysize 60
+	interval 0.9
+	offset 0 60 0
+	dontlightself 1
+}
+
+// Attach the effect to a object frame
+Object LightPillar
+{
+	Frame LIGH { Light TemplatePulseLight }
+}
