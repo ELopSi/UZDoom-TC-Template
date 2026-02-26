@@ -4,8 +4,9 @@
 // https://zdoom.org/w/index.php?title=SNDINFO
 
 // Sound Identifier and the path
-SFX/SwitchTemplateOn = "Sounds/SFX/SwitchSoundOn.wav"
-SFX/SwitchTemplateOff = "Sounds/SFX/SwitchSoundOff.wav"
+SFX/SwitchTemplateOn = "Sounds/SFX/SwitchOn.wav"
+SFX/SwitchTemplateOff = "Sounds/SFX/SwitchOff.wav"
+SFX/CoinTemplate = "Sounds/SFX/CoinGet.ogg"
 
 // --------------------------------------------------------
 
@@ -14,3 +15,4 @@ SFX/SwitchTemplateOff = "Sounds/SFX/SwitchSoundOff.wav"
 // https://zdoom.org/w/index.php?title=Ambient_sound
 
 $ambient 1 SFX/SwitchTemplateOff point periodic 60 .5
+

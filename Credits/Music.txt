@@ -1,0 +1,11 @@
+- Sludge
+- The Precipice
+
+Music created by:
+- DoomKid - https://doomwiki.org/wiki/Doomkid
+
+All music used in this template is for placeholder and learning purposes only.
+
+When you create your own game using this template, please make sure to use 
+your own OST or properly credit all authors if you use any music or 
+sound effects created by others.
