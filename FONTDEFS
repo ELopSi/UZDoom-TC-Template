@@ -6,9 +6,9 @@
 // With ZDoom-family source ports, it is easy to create custom fonts
 // using the following lumps:
 
-// CONFONT.lmp	- Console font
-// SMALLFNT.lmp	- Message font
-// BIGFONT.lmp	- Main menu and title font
+// CONFONT.bmf	- Console font
+// SMALLFNT.bmf	- Message font
+// BIGFONT.bmf	- Main menu and title font
 
 // A great tool for font creation is 'Doom Font Genesis' by ErmacMKIII:
 // Source 		- https://github.com/ErmacMKIII/DoomFontGenesis

@@ -81,7 +81,7 @@ map MAP01 "First Level Episode 1"
 	sky1 = "F_SKY1"
 	cluster = 20
 	par = 60
-	//music = " "
+	music = "/Sounds/Music/Map01.mid"
 }
 
 map MAP02 "First Level Episode 2"
@@ -92,5 +92,5 @@ map MAP02 "First Level Episode 2"
 	sky1 = "F_SKY1"
 	cluster = 30
 	par = 90
-	//music = " "
+	music = "/Sounds/Music/Map02.mid"
 }
