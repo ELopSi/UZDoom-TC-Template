@@ -1,0 +1,11 @@
+// MUSINFO is a simple system that changes the music in maps.
+
+// To use it, place a 'MusicChanger' thing with the desired music index
+// inside a sector. When the player enters that sector,
+// the music will automatically change.
+
+// https://zdoom.org/w/index.php?title=MUSINFO
+
+MAP01
+1 "Sounds/Music/Map01.mid"
+2 "Sounds/Music/Map02.mid"

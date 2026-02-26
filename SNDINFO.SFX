@@ -3,16 +3,14 @@
 
 // https://zdoom.org/w/index.php?title=SNDINFO
 
+// Predefined sounds 
+// https://zdoom.org/w/index.php?title=Predefined_sounds
+
+// Predefined
+menu/cursor = "Sounds/SFX/SwitchOn.wav"
+menu/choose = "Sounds/SFX/CoinGet.ogg"
+
 // Sound Identifier and the path
 SFX/SwitchTemplateOn = "Sounds/SFX/SwitchOn.wav"
 SFX/SwitchTemplateOff = "Sounds/SFX/SwitchOff.wav"
 SFX/CoinTemplate = "Sounds/SFX/CoinGet.ogg"
-
-// --------------------------------------------------------
-
-// AMBIENT SOUND
-
-// https://zdoom.org/w/index.php?title=Ambient_sound
-
-$ambient 1 SFX/SwitchTemplateOff point periodic 60 .5
-
