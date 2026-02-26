@@ -2,15 +2,14 @@
 // sky textures, music, level labels, par times, cluster assignments, and 
 // special behaviors for maps.
 
+// https://zdoom.org/w/index.php?title=MAPINFO/Skill_definition
+
 defaultmap
 {
 	nojump
 	nocrouch
 	nofreelook
 }
-
-// Skills definition
-// https://zdoom.org/w/index.php?title=MAPINFO/Skill_definition
 
 skill baby
 {
@@ -71,6 +70,12 @@ episode MAP02
 {
 	name = "Template Episode 2"
 	key = "2"
+}
+
+map TITLEMAP "Template TITLEMAP"
+{
+	sky1 = "F_SKY1"
+	music = "/Sounds/Music/Map02.mid"
 }
 
 map MAP01 "First Level Episode 1"

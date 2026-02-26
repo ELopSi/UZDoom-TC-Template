@@ -2,3 +2,21 @@
 // specifying team names, colors, and rules for team-based gameplay.
 
 // https://zdoom.org/w/index.php?title=TEAMINFO
+
+ClearTeams
+
+Team "Humans"
+{
+	Game "Any"
+	PlayerColor "00 FF A0"
+	TextColor "Green"
+	Logo "Humanity"
+}
+
+Team "Demons"
+{
+	Game "Any"
+	PlayerColor "00 FF A0"
+	TextColor "Red"
+	Logo "Demonkind"
+}

@@ -7,7 +7,7 @@
 DefaultListMenu
 {
 	Font "BIGFONT", "Gray", "Untranslated"
-	Selector "SW1", -28, -1
+	Selector "BSELECT", -15, 0
 	LineSpacing 14
 }
 
