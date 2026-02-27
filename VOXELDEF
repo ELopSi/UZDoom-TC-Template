@@ -2,4 +2,15 @@
 // their sprite source, scaling, rotation, and how they replace or complement 
 // traditional 2D sprites in-game.
 
+// See the perfomance concerns in the documentation.
+
 // https://zdoom.org/w/index.php?title=VOXELDEF
+
+// Uncomment to change the Light Pillar sprites to template Voxel Pillar.
+
+// LIGHA = "Voxel/LIGHA0.kvx" 
+// {
+//		Scale = 1.0
+//		PlacedSpin = 25	
+//		OverridePalette
+// }   
