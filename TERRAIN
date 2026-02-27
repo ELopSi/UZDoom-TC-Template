@@ -1,24 +1,42 @@
-// TERRAIN is a script section that defines floor and ceiling textures’ 
-// physical properties, such as friction, movement effects, footstep sounds, 
-// and interactions with actors.
+// TERRAIN is a script section that defines floor and ceiling textures'
+// physical properties, such as friction, movement effects, footstep sounds,
+// and interactions with actors. It is also possible to spawn particles
+// using actors for better immersion. Use Heretic or Hexen as a base for testing.
 
 // https://zdoom.org/w/index.php?title=TERRAIN
 
-Terrain WaterTemplate
-{
-	Liquid		
-	Splash 		WaterSplashTemplate
-	Friction 	0.8
-}
-
+// Splash actor and particles to spawn
 Splash WaterSplashTemplate
 {
-	BaseClass	WaterSplashBase
-	SmallSound 	SFX/CoinTemplate
-	    
-	NoAlert
+	// Actor mass less than 10
+	smallclass      WaterSplashBase
+    smallclip       12
+    smallsound      SFX/WaterSplashTemplate
+	
+	// Actor mass greater than 10
+    baseclass       WaterSplashBase
+    chunkclass      WaterSplash
+	sound          	SFX/WaterSplashTemplate
+	
+    chunkxvelshift  8
+    chunkyvelshift  8
+    chunkzvelshift  8
+    chunkbasezvel   2
+    
+    noalert
 }
 
+// Terrain variation and Splash definition (if it has one)
+Terrain WaterTemplate
+{
+	Splash 		WaterSplashTemplate
+	footclip 	4
+	Friction 	0.8
+	
+	Liquid		
+}
+
+// Attach the terrain modification directly in the sprites
 Floor WATER1 WaterTemplate
 Floor WATER2 WaterTemplate
 Floor WATER3 WaterTemplate
