@@ -3,3 +3,23 @@
 // and interactions with actors.
 
 // https://zdoom.org/w/index.php?title=TERRAIN
+
+Terrain WaterTemplate
+{
+	Liquid		
+	Splash 		WaterSplashTemplate
+	Friction 	0.8
+}
+
+Splash WaterSplashTemplate
+{
+	BaseClass	WaterSplashBase
+	SmallSound 	SFX/CoinTemplate
+	    
+	NoAlert
+}
+
+Floor WATER1 WaterTemplate
+Floor WATER2 WaterTemplate
+Floor WATER3 WaterTemplate
+Floor WATER4 WaterTemplate
