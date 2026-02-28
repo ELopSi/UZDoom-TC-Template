@@ -12,8 +12,8 @@
 pulselight TemplatePulseLight
 {
 	Color 0.0 1 0.0
-	Size 80
-	secondarysize 60
+	Size 40
+	secondarysize 30
 	interval 0.9
 	offset 0 60 0
 	dontlightself 1

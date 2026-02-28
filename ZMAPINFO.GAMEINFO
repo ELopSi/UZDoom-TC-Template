@@ -99,4 +99,6 @@ DoomEdNums
 	30001 = "TemplateKey"
 	30002 = "TemplateBossKey"
 	30003 = "LightPillar"
+	30004 = "TemplatePlayer"
+	30005 = "TemplateMonster"
 }

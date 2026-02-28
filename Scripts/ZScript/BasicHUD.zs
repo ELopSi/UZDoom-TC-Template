@@ -28,11 +28,11 @@ class BasicHUD : BaseStatusBar
 
 		if (player)
 		{
-			let basicArmor = BasicArmor(player.FindInventory("BasicArmor"));
+			let _basicArmor = BasicArmor(player.FindInventory("BasicArmor"));
 			
-			if (basicArmor)
+			if (_basicArmor)
 			{
-				armorCount = basicArmor.Amount;
+				armorCount = _basicArmor.Amount;
 			}
 		}
 		
@@ -44,11 +44,11 @@ class BasicHUD : BaseStatusBar
 	
 		if (player)
 		{
-			let medal = Medal(player.FindInventory("Medal"));
+			let _medal = Medal(player.FindInventory("Medal"));
 			
-			if (medal)
+			if (_medal)
 			{
-				medalCount = medal.Amount;
+				medalCount = _medal.Amount;
 			}
 		}
 		
