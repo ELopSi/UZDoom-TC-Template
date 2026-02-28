@@ -5,7 +5,7 @@ class TemplateMonster : Actor
 		Health 20;
 		Radius 20;
 		Height 56;
-		Speed 8;
+		Speed 10;
 		PainChance 200;
 		Monster;
 		+FLOORCLIP
@@ -60,7 +60,7 @@ class TemplateMonster : Actor
 	
 		for (int i = 0; i < max; i++)
 		{	
-			A_SpawnItemEx("Medal", xvel: random(-2, 2), yvel:random(-2, 2), zvel:random(7, 10));
+			A_SpawnItemEx("Medal", xvel: frandom(-2, 2), yvel: frandom(-2, 2), zvel: frandom(7, 10));
 		}
 	}
 }

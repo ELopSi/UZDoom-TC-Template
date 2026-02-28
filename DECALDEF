@@ -8,10 +8,11 @@
 fader FadeDecalAnimationTemplate
 {
    DecayStart 0
-   DecayTime 3
+   DecayTime 5
 }
 
-decal CustomDecal1 10
+// Custom Decal 1 --------------
+decal CustomDecal1 1	// Name and ID
 {
 	// Call the animation
 	animator FadeDecalAnimationTemplate
@@ -32,6 +33,16 @@ decal CustomDecal1 10
     randomflipy	
 }
 
-// Apply the CustomDecal1 to the rocket
 generator Rocket CustomDecal1
 
+// Custom Decal 2 --------------
+
+decal CustomDecal2 2
+{
+	animator FadeDecalAnimationTemplate
+
+    pic DECAL2
+	
+    x-scale 0.1
+    y-scale 0.1	
+}
