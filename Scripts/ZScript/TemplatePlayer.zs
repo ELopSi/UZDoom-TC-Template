@@ -1,0 +1,4 @@
+class TemplatePlayer : PlayerPawn
+{
+  
+}
