@@ -2,12 +2,13 @@ class TemplateMonster : Actor
 {
 	Default
 	{
-		Health 20;
+		Health 35;
 		Radius 20;
 		Height 56;
 		Speed 10;
 		PainChance 200;
 		Monster;
+		BloodType "BloodSplat";
 		+FLOORCLIP
 		SeeSound 	"grunt/sight";
 		AttackSound "grunt/attack";

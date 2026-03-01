@@ -46,3 +46,13 @@ decal CustomDecal2 2
     x-scale 0.1
     y-scale 0.1	
 }
+
+// Custom Decal 3 --------------
+
+decal CustomBloodDecal 3
+{
+	pic BSPLA0
+	
+    x-scale 1
+    y-scale 1	
+}

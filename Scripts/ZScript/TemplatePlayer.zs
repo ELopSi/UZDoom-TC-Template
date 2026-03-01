@@ -8,6 +8,7 @@ class TemplatePlayer : PlayerPawn
 		Mass 100;
 		Painchance 255;
 		Speed 1;
+		Bloodtype "BloodSplat";
 		+SOLID
 		+SHOOTABLE
 		+DROPOFF
@@ -46,7 +47,7 @@ class TemplatePlayer : PlayerPawn
 		Player.AirCapacity 1;
 		Player.FlyBob 1;
 		Player.ViewBob 1;
-		Player.ViewBobSpeed 20;
+		Player.ViewBobSpeed 40;
 		Player.WaterClimbSpeed 3.5;
 		Player.TeleportFreezeTime 18;
 		Obituary "Template Player killed you!";

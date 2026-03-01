@@ -13,3 +13,5 @@ version 4.14.2
 #include "Scripts/ZScript/TemplatePlayer.zs"
 #include "Scripts/ZScript/TemplateMonster.zs"
 #include "Scripts/ZScript/TemplateShotgun.zs"
+#include "Scripts/ZScript/BloodSplat.zs"
+#include "Scripts/ZScript/BulletSmoke.zs"

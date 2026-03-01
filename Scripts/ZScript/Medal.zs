@@ -13,8 +13,7 @@ class Medal : Inventory
 		Inventory.Amount 1;
 		Inventory.MaxAmount 999;
 		Inventory.PickupMessage "Picked up a medal!";
-		Inventory.PickupSound "SFX/CoinTemplate";
-		
+		Inventory.PickupSound "SFX/CoinTemplate";	
 	}
 	
 	States
