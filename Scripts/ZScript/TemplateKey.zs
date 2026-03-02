@@ -1,4 +1,4 @@
-class TemplateKey : doomkey
+class TemplateKey : key
 {
 	Default
 	{
@@ -15,7 +15,7 @@ class TemplateKey : doomkey
 	}
 }
 
-class TemplateBossKey : doomkey
+class TemplateBossKey : key
 {
 	Default
 	{

@@ -9,6 +9,8 @@
 
 GameInfo
 {	
+	AddEventHandlers = "ReplaceAllActors"
+
 	titlepage 					= "TITLE"
 	creditpage 					= "CREDIT"
 	titlemusic					= "$MUSIC_DM2TTL"
@@ -101,4 +103,5 @@ DoomEdNums
 	30003 = "LightPillar"
 	30004 = "TemplatePlayer"
 	30005 = "TemplateMonster"
+	30006 = "TemplateShell"
 }

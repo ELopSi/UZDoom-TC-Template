@@ -1,7 +1,11 @@
 class TemplateMonster : Actor
 {
+	// 'user_' prefix can expose the variable on the editor
+	// Slade editor add property is required to expose the variable
+	bool user_hasTemplateKey;
+	
 	Default
-	{
+	{	
 		Health 35;
 		Radius 20;
 		Height 56;
@@ -9,13 +13,14 @@ class TemplateMonster : Actor
 		PainChance 200;
 		Monster;
 		BloodType "BloodSplat";
+		DropItem "TemplateShell";
 		+FLOORCLIP
 		SeeSound 	"grunt/sight";
 		AttackSound "grunt/attack";
 		PainSound 	"grunt/pain";
 		DeathSound 	"grunt/death";
 		ActiveSound "grunt/active";
-		Obituary 	"Template monster killed you!";
+		Obituary 	"Template monster killed you!"; 
 	}
 	
  	States
@@ -36,7 +41,14 @@ class TemplateMonster : Actor
 			MONS G 3 A_Pain;
 			Goto See;
 		Death:
-			MONS H 5 A_DropMedals;
+			// Execute multiple action functions within a single state 
+			// by using an anonymous function
+			MONS H 5	
+			{
+				A_DropMedals();
+				A_DropTemplateKey();
+			}
+			
 			MONS I 5 A_Scream;
 			MONS J 5 A_NoBlocking;
 			MONS K 5;
@@ -62,6 +74,14 @@ class TemplateMonster : Actor
 		for (int i = 0; i < max; i++)
 		{	
 			A_SpawnItemEx("Medal", xvel: frandom(-2, 2), yvel: frandom(-2, 2), zvel: frandom(7, 10));
+		}
+	}
+	
+	void A_DropTemplateKey()
+	{
+		if (user_hasTemplateKey)
+		{
+			A_SpawnItemEx("TemplateKey", zvel:10);
 		}
 	}
 }
