@@ -1,0 +1,10 @@
+// TRNSLATE is a text-based lump in ZDoom that defines custom color translations
+// (color remapping). These translations can be applied to actors, sprites, 
+// and overlays, allowing their palette colors to be remapped dynamically, 
+// including at runtime.
+
+// https://zdoom.org/w/index.php?title=TRNSLATE
+
+Red		= "0:255=176:191"
+Green	= "0:255=112:127"
+Blue	= "0:255=192:207"

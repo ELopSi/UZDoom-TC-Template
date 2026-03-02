@@ -26,6 +26,7 @@ class TemplateMonster : Actor
  	States
 	{
 		Spawn:
+			MONS A 0 NoDelay A_IfHasKeyChangeColor();
 			MONS AB 10 A_Look;
 			Loop;
 		See:
@@ -82,6 +83,14 @@ class TemplateMonster : Actor
 		if (user_hasTemplateKey)
 		{
 			A_SpawnItemEx("TemplateKey", zvel:10);
+		}
+	}
+	
+	void A_IfHasKeyChangeColor()
+	{
+		if (user_hasTemplateKey) 
+		{
+			A_SetTranslation("Green");
 		}
 	}
 }
