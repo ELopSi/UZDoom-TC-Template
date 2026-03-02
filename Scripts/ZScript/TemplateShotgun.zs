@@ -26,7 +26,7 @@ class TemplateShotgun : Weapon
 		Fire:
 			SHTG A 3;
 			SHTG B 3;
-			SHTG B 2 A_FireBullets (15.0, 8.0, 20, 2, "BulletSmoke", range: 700);
+			SHTG B 2 A_FireBullets (10.0, 8.0, 20, 2, "BulletSmoke", range: 700);
 			SHTG C 5;
 			SHTG DEC 4;
 			SHTG F 3;
