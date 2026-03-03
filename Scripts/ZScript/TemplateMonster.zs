@@ -6,11 +6,11 @@ class TemplateMonster : Actor
 	
 	Default
 	{	
-		Health 35;
+		Health 150;
 		Radius 20;
 		Height 56;
 		Speed 10;
-		PainChance 200;
+		PainChance 220;
 		Monster;
 		BloodType "BloodSplat";
 		DropItem "TemplateShell";
@@ -38,7 +38,13 @@ class TemplateMonster : Actor
 			MONS E 8;
 			Goto See;
 		Pain:
-			MONS G 3;
+			MONS G 3 
+			{ 
+				A_SprayDecal("CustomGroupBloodSplatterDecal", 
+				128, 
+				(frandom(0, 64), frandom(0, 64), frandom(0, 64)));
+			}
+			
 			MONS G 3 A_Pain;
 			Goto See;
 		Death:

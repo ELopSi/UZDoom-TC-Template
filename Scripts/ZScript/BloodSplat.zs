@@ -1,9 +1,9 @@
-class BloodSplat : Blood
+class BloodSplat : Actor
 {
 	Default
 	{
 		+NOBLOCKMAP
-		+ISPUFF
+		+NOTELEPORT
 		+ALLOWPARTICLES
 	}
 	
@@ -11,6 +11,10 @@ class BloodSplat : Blood
 	{
 		Spawn:
 			BSPL ABCD 4;
+			Stop;
+		Spray:
+			BSPL ABC 2;
+			BSPL D 1;
 			Stop;
 	}
 }

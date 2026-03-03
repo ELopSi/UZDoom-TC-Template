@@ -15,6 +15,6 @@ class BulletSmoke : Actor
 	{
 		Spawn:
 			BSMO ABCD 4;
-			Stop;	
+			Stop;
 	}
 }
