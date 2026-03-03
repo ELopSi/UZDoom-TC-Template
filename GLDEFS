@@ -19,7 +19,7 @@ pulselight TemplatePulseLight
 	dontlightself 1
 }
 
-// Attach the effect to a object frame
+// Attach the effect to a actor frame
 Object LightPillar
 {
 	Frame LIGH { Light TemplatePulseLight }
