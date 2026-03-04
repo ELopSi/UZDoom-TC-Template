@@ -36,7 +36,6 @@ decal CustomDecal1 1	// Name and ID
 generator Rocket CustomDecal1
 
 // Custom Decal 2 --------------
-
 decal CustomDecal2 2
 {
 	animator FadeDecalAnimationTemplate
@@ -46,73 +45,3 @@ decal CustomDecal2 2
     x-scale 0.1
     y-scale 0.1	
 }
-
-// Custom Decal 3 --------------
-
-decal CustomBloodDecal 3
-{
-	pic BSPLD0
-	
-    x-scale 1
-    y-scale 1
-}
-
-decal CustomBloodSplatterDecal1 4
-{
-	pic BSPLA0
-	translucent 0.6
-	
-    x-scale 0.5
-    y-scale 0.5
-	
-	randomflipx
-    randomflipy		
-}
-
-decal CustomBloodSplatterDecal2 5
-{
-	pic BSPLB0
-	translucent 0.6
-	
-	x-scale 0.5
-    y-scale 0.5
-	
-	randomflipx
-    randomflipy			
-}
-
-decal CustomBloodSplatterDecal3 5
-{
-	pic BSPLC0
-	translucent 0.6
-	
-	x-scale 0.5
-    y-scale 0.5
-	
-	randomflipx
-    randomflipy		
-}
-
-decal CustomBloodSplatterDecal4 6
-{
-	pic BSPLD0
-	translucent 0.6
-	
-    x-scale 0.5
-    y-scale 0.5
-	
-	randomflipx
-    randomflipy		
-}
-
-decalgroup CustomGroupBloodSplatterDecal 7
-{
-	CustomBloodSplatterDecal1 1
-	CustomBloodSplatterDecal2 1
-	CustomBloodSplatterDecal3 1
-	CustomBloodSplatterDecal4 1
-}
-
-// Engine Blood (Wall decal spray) sprites is just a transparent images to
-// not showing up if you shoot at the enemies. Create your own bloodsplat
-// sprites and add manually with A_SprayDecal() actor function.

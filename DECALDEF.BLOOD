@@ -1,0 +1,89 @@
+// DECALDEF is a script definition that specifies a texture or sprite to be 
+// applied as a decal (e.g., bullet holes, blood splatters) on walls, floors, 
+// or ceilings, including properties like size, orientation, and behavior.
+
+// https://zdoom.org/w/index.php?title=DECALDEF
+
+slider BloodWallSlide
+{
+   DistX 0
+   DistY -10
+   SlideStart 0
+   SlideTime 3
+}
+
+stretcher BloodWallStretch
+{
+   GoalY 1.5
+   StretchStart 1
+   StretchTime 2
+}
+
+decal CustomBloodDecal 3
+{
+	pic BSPLD0
+	
+    x-scale 1
+    y-scale 1
+}
+
+decal CustomBloodSplatterDecal1 4
+{
+	animator BloodWallSlide
+	animator BloodWallStretch
+
+	pic BSPLA0
+	translucent 0.6
+	
+    x-scale 0.5
+    y-scale 0.5
+}
+
+decal CustomBloodSplatterDecal2 5
+{
+	animator BloodWallSlide
+	animator BloodWallStretch
+
+	pic BSPLB0
+	translucent 0.6
+	
+	x-scale 0.5
+    y-scale 0.5
+}
+
+decal CustomBloodSplatterDecal3 5
+{
+	animator BloodWallSlide
+	animator BloodWallStretch
+
+	pic BSPLC0
+	translucent 0.6
+	
+	x-scale 0.5
+    y-scale 0.5
+}
+
+decal CustomBloodSplatterDecal4 6
+{
+	animator BloodWallSlide
+	animator BloodWallStretch
+
+	pic BSPLD0
+	translucent 0.6
+	
+    x-scale 0.5
+    y-scale 0.5
+}
+
+// Group random decal for blood spray
+decalgroup CustomGroupBloodSplatterDecal 7
+{
+	CustomBloodSplatterDecal1 1
+	CustomBloodSplatterDecal2 1
+	CustomBloodSplatterDecal3 1
+	CustomBloodSplatterDecal4 1
+}
+
+// Engine Blood (Wall decal spray) sprites is just a transparent images to
+// not showing up if you shoot at the enemies. Create your own bloodsplat
+// sprites and add manually with A_SprayDecal() actor function.
