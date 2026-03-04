@@ -1,12 +1,12 @@
 class TemplateMonster : Actor
 {
-	// 'user_' prefix can expose the variable on the editor
+	// 'user_' prefix can expose the variable in the editor
 	// Slade editor add property is required to expose the variable
 	bool user_hasTemplateKey;
 	
 	Default
 	{	
-		Health 150;
+		Health 75;
 		Radius 20;
 		Height 56;
 		Speed 10;
@@ -15,11 +15,6 @@ class TemplateMonster : Actor
 		BloodType "BloodSplat";
 		DropItem "TemplateShell";
 		+FLOORCLIP
-		SeeSound 	"grunt/sight";
-		AttackSound "grunt/attack";
-		PainSound 	"grunt/pain";
-		DeathSound 	"grunt/death";
-		ActiveSound "grunt/active";
 		Obituary 	"Template monster killed you!"; 
 	}
 	

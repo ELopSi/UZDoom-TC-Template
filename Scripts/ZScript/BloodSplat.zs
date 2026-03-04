@@ -12,9 +12,5 @@ class BloodSplat : Actor
 		Spawn:
 			BSPL ABCD 4;
 			Stop;
-		Spray:
-			BSPL ABC 2;
-			BSPL D 1;
-			Stop;
 	}
 }

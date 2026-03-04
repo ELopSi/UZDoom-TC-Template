@@ -1,4 +1,4 @@
-class UnknownActor : Actor { states { Spawn: #### # 0 NoDelay { console.printf('Unknown actor or visual thinker'); Destroy(); } stop; } }
+class UnknownActor : Actor { states { Spawn: TNT1 A 0 NoDelay { console.printf('Unknown actor or visual thinker'); Destroy(); } stop; } }
 
 class ReplaceAllActors : Eventhandler
 {
@@ -549,7 +549,7 @@ class ReplaceAllActors : Eventhandler
             case 'FlameSmall':
             case 'FlameLargeTemp':
             case 'FlameLarge':
-				e.Replacement = 'UnknownActor';
+			e.Replacement = 'UnknownActor';
 				break;
 		}
 	}

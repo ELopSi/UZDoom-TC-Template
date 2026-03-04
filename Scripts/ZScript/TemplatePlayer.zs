@@ -1,7 +1,7 @@
 class TemplatePlayer : PlayerPawn
-{
+{	
 	Default
-	{
+	{		
 		Health 100;
 		Radius 16;
 		Height 56;

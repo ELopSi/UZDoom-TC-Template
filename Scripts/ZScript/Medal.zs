@@ -1,6 +1,5 @@
 class Medal : Inventory
 {
-	// Actor flags, properties and action special documentation:
 	// https://zdoom.org/w/index.php?title=Actor_flags
 	// https://zdoom.org/w/index.php?title=Actor_properties
 	// https://zdoom.org/w/index.php?title=Action_specials
