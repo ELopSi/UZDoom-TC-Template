@@ -7,7 +7,7 @@ class TemplateShell : Ammo
 		
 		Inventory.Amount 8;
 		Inventory.MaxAmount 250;
-		Inventory.PickupMessage "Picked up a Template Shell";
+		Inventory.PickupMessage "Picked up an Template Shell";
 	}
 	
 	States
