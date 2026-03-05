@@ -4,7 +4,7 @@
 // https://zdoom.org/w/index.php?title=ANIMDEFS
 
 // Simple Switch with sound
-switch SW1 on sound SFX/SwitchTemplateOn pic SW2 tics 0 off sound SFX/SwitchTemplateOff pic SW1 tics 0
+switch SWH1 on sound SFX/SwitchTemplateOn pic SWH2 tics 0 off sound SFX/SwitchTemplateOff pic SWH1 tics 0
 
 // Simple texture animations
 texture WATER1 range WATER4 tics 8

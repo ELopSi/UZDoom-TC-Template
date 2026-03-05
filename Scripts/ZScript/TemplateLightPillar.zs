@@ -1,4 +1,4 @@
-class LightPillar : Actor
+class TemplateLightPillar : Actor
 {
   
   Default

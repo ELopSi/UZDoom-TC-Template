@@ -20,7 +20,7 @@ pulselight TemplatePulseLight
 }
 
 // Attach the effect to a actor frame
-Object LightPillar
+Object TemplateLightPillar
 {
 	Frame LIGH { Light TemplatePulseLight }
 }

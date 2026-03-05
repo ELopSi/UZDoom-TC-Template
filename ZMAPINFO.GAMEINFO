@@ -13,12 +13,12 @@ GameInfo
 
 	titlepage 					= "TITLE"
 	creditpage 					= "CREDIT"
-	titlemusic					= "$MUSIC_DM2TTL"
+	titlemusic					= "Music/MapDone"
 	titletime					= 10
 	advisorytime				= 0
 	pagetime					= 5
 	chatsound					= "misc/chat"
-	finalemusic					= "$MUSIC_READ_M"
+	finalemusic					= "Music/MapFinale"
 	finaleflat					= "RIPPLE1"
 	finalepage					= "VICTORY1"
 	infopage					= "HELP1", "CREDIT"
@@ -35,7 +35,7 @@ GameInfo
 	armoricons					= "ARM1A0", 0.5, "ARM2A0"
 	//statusbar 				= "SBARINFO"
 	statusbarclass				= "BasicHUD"
-	intermissionmusic			= "$MUSIC_DM2INT"
+	intermissionmusic			= "Music/MapIntermission"
 	intermissioncounter			= true
 	weaponslot 					= 1, "TemplateShotgun"
 	weaponslot 					= 2, ""
@@ -100,7 +100,7 @@ DoomEdNums
 	30000 = "Medal"
 	30001 = "TemplateKey"
 	30002 = "TemplateBossKey"
-	30003 = "LightPillar"
+	30003 = "TemplateLightPillar"
 	30004 = "TemplatePlayer"
 	30005 = "TemplateMonster"
 	30006 = "TemplateShell"
