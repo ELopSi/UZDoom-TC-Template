@@ -6,7 +6,6 @@
 
 slider BloodWallSlide
 {
-   DistX 0
    DistY -10
    SlideStart 0
    SlideTime 3

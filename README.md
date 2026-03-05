@@ -38,7 +38,7 @@ Yes and no.
 
 ### How to use it?
 
-If you have prior experience working with ZDoom, the process is essentially the same but better organized with boilerplate code. It also includes a few *ZScript* and lump files to help remove original game information, such as GlobalActorsReplaces.zs, which replace Doom engine game classes and causes the console to fail when summoning native actors. For example, attempting to summon a Zombieman will trigger an error message, replace the actor with nothing, and destroy it sequentially. Another example is the MENUDEF lump, which overrides the native options page, you can simply modify it to suit your needs.
+If you have prior experience working with **ZDoom**, the process is essentially the same but better organized with boilerplate code. It also includes a few *ZScript* and lump files to help remove original game information, such as **GlobalActorsReplaces.zs**, which replace Doom engine game classes and causes the console to fail when summoning native actors. For example, attempting to summon a **Zombieman** will trigger an error message, replace the actor with nothing, and destroy it sequentially. Another example is the **MENUDEF** lump, which overrides the native options page, you can simply modify it to suit your needs.
 
 ### Recommendation for New Mappers
 
