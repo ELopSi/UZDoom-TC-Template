@@ -3,6 +3,7 @@ class TemplateShotgun : Weapon
 	Default
 	{
 		+NODAMAGETHRUST
+		
 		Weapon.SelectionOrder 1300;
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 8;

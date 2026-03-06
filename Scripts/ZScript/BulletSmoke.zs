@@ -6,6 +6,7 @@ class BulletSmoke : Actor
 		+NOGRAVITY
 		+ISPUFF
 		+ALLOWPARTICLES
+		
 		RenderStyle "Translucent";
 		Alpha 0.5;
 		VSpeed 1;

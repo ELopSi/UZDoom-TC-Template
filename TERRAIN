@@ -31,6 +31,7 @@ Terrain WaterTemplate
 {
 	Splash 		WaterSplashTemplate
 	footclip 	4
+	Liquid
 	Friction 	0.8
 	
 	Liquid		

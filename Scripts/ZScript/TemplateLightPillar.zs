@@ -1,19 +1,19 @@
 class TemplateLightPillar : Actor
 {
   
-  Default
-  {
-	Radius 2.5;
-	Height 64;
+	Default
+	{
+		+SOLID
+		+FIXMAPTHINGPOS;
+		
+		Radius 2.5;
+		Height 64;
+	}
 
-	+SOLID
-	+FIXMAPTHINGPOS;
-  }
-
-  States
-  {
+	States
+	{
 		Spawn:
 			LIGH A -1;
 			stop;
-  }
+	}
 }

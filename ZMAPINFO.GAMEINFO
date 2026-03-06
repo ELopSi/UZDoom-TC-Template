@@ -104,4 +104,5 @@ DoomEdNums
 	30004 = "TemplatePlayer"
 	30005 = "TemplateMonster"
 	30006 = "TemplateShell"
+	30007 = "TemplateChest"
 }

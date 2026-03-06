@@ -2,13 +2,6 @@ class TemplatePlayer : PlayerPawn
 {	
 	Default
 	{		
-		Health 100;
-		Radius 16;
-		Height 56;
-		Mass 100;
-		Painchance 255;
-		Speed 1;
-		Bloodtype "BloodSplat";
 		+SOLID
 		+SHOOTABLE
 		+DROPOFF
@@ -22,6 +15,15 @@ class TemplatePlayer : PlayerPawn
 		+WINDTHRUST
 		+TELESTOMP
 		+NOBLOCKMONST
+		
+		Health 100;
+		Radius 16;
+		Height 56;
+		Mass 100;
+		Painchance 255;
+		Speed 1;
+		Bloodtype "BloodSplat";
+		
 		Player.DisplayName "Template Player";
 		Player.CrouchSprite "PLYC";
 		Player.StartItem "TemplateShotgun";

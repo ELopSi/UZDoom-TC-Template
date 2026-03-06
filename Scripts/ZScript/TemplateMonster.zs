@@ -6,6 +6,8 @@ class TemplateMonster : Actor
 	
 	Default
 	{	
+		+FLOORCLIP
+
 		Health 75;
 		Radius 20;
 		Height 56;
@@ -14,8 +16,7 @@ class TemplateMonster : Actor
 		Monster;
 		BloodType "BloodSplat";
 		DropItem "TemplateShell";
-		+FLOORCLIP
-		Obituary 	"Template monster killed you!"; 
+		Obituary 	"Template Monster killed you!"; 
 	}
 	
  	States

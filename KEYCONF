@@ -4,3 +4,4 @@
 // https://zdoom.org/w/index.php?title=KEYCONF
 
 alias macro_MoreMedals "summon medal; wait 95; give Medal 25; summon medal; echo Template String"
+alias macro_Chest "summon templatechest; give templatebosskey"

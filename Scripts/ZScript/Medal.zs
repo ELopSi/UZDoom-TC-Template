@@ -7,6 +7,7 @@ class Medal : Inventory
 	default
 	{
 		+COUNTITEM
+		
 		+INVENTORY.ALWAYSPICKUP;
 		
 		Inventory.Amount 1;
