@@ -6,8 +6,10 @@ class Medal : Inventory
 	
 	default
 	{
-		+COUNTITEM
+		Radius 1;
+		Height 8;
 		
+		+COUNTITEM
 		+INVENTORY.ALWAYSPICKUP;
 		
 		Inventory.Amount 1;
