@@ -33,7 +33,7 @@ class TemplateChest : Actor
 		if (checkDelay > 0) checkDelay--;
 		
 		// End early if chest is open or delay is still running.
-		if (chestOpened == true) return;
+		if (chestOpened) return;
 		if (checkDelay > 0) return;
 		
 		// If player is holding 'USE' button, lacks Template Boss Key, and is within 64 units,
@@ -59,7 +59,11 @@ class TemplateChest : Actor
 			// Spawn 10 Medals
 			for (int i = 0; i < 10; i++)
 			{
-				A_SpawnItemEx("Medal", xvel:frandom(-3, 3), yvel:frandom(1, 2), zvel:frandom(7, 12), self.Angle * -1);
+				string randomItem = random(0, 12) == 0 ? "TemplateMedkit" : 
+									random(0, 12) == 1 ? "TemplateShield" : 
+														 "Medal";
+														 
+				A_SpawnItemEx(randomItem, xvel:frandom(-1, 1), yvel:frandom(2, 3), zvel:frandom(7, 12), self.Angle * -1);
 			}
 			
 			return;

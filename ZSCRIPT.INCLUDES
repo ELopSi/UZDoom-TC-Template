@@ -18,3 +18,5 @@ version 4.14.2
 #include "Scripts/ZScript/TemplateShell.zs"
 #include "Scripts/ZScript/GlobalActorsReplaces.zs"
 #include "Scripts/ZScript/TemplateChest.zs"
+#include "Scripts/ZScript/TemplateMedkit.zs"
+#include "Scripts/ZScript/TemplateShield.zs"
