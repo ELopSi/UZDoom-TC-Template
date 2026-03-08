@@ -8,9 +8,9 @@
 
 // Uncomment to change the Light Pillar sprites to template Voxel Pillar.
 
-// LIGHA = "Voxel/LIGHA0.kvx" 
-// {
+//LIGHA = "Voxel/LIGHA0.kvx" 
+//{
 //		Scale = 1.0
 //		PlacedSpin = 25	
 //		OverridePalette
-// }   
+//}   
