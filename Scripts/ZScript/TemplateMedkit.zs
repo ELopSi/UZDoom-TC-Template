@@ -1,7 +1,7 @@
 class TemplateMedkit : Health
 {
-	default
-	{	
+	Default
+	{
 		Inventory.Amount 15;
 		Inventory.MaxAmount 100;
 		Inventory.PickupMessage "You picked up the Template Medkit.";

@@ -1,10 +1,10 @@
 class TemplateShield : BasicArmorBonus
 {
-	default
-	{	
+	Default
+	{
 		Armor.SaveAmount 5;
 		Armor.SavePercent 50;
-		Armor.MaxSaveAmount 250;		
+		Armor.MaxSaveAmount 250;
 		Inventory.Pickupmessage "You got Template Shield";
 	}
 

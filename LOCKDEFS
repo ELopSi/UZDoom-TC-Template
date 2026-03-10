@@ -1,9 +1,9 @@
-// LOCKDEFS is a script section that defines locks and keys, specifying 
+// LOCKDEFS is a script section that defines locks and keys, specifying
 // which key items open which locked doors or sectors in a map.
 
 // https://zdoom.org/w/index.php?title=LOCKDEFS
 
-// Use Clealocks to clear all lock definitions from previous definitions. 
+// Use Clearlocks to clear all lock definitions from previous definitions.
 // Use this only if you do not want to use any of the original locks.
 Clearlocks
 
@@ -11,10 +11,10 @@ Lock 1
 {
 	// List all items required on inventory to open the lock
 	TemplateKey
-	
+
 	// Text to inform you don't have the requirements
 	RemoteMessage "You need a Template Key to open this door!"
-	
+
 	// Color the lock line in the automap
 	MapColor 255 0 255
 }
@@ -24,8 +24,8 @@ Lock 2
 	TemplateKey
 	TemplateBossKey
 	Medal
-	
-	RemoteMessage "You need a Template Key and Template Boss key to open this door 
+
+	RemoteMessage "You need a Template Key and Template Boss key to open this door
 	and at least one Medal!"
 	MapColor 255 0 255
 }

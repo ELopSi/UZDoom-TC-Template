@@ -1,4 +1,4 @@
-// MENUDEF is a script section that defines custom in-game menus, including their 
+// MENUDEF is a script section that defines custom in-game menus, including their
 // layout, options, behavior, and how players interact with them.
 
 DefaultOptionMenu
@@ -6,14 +6,14 @@ DefaultOptionMenu
 	Position -13
 }
 
-OptionMenu "CustomOptionsMenu" 
+OptionMenu "CustomOptionsMenu"
 {
 	StaticText " "
 	Title 	"$OPTMNU_TITLE"
 	Submenu "$OPTMNU_CONTROLS",			"CustomizeControls"
 	Submenu "$OPTMNU_MOUSE",			"MouseOptions"
 	Submenu "$OPTMNU_JOYSTICK",			"JoystickOptions"
-	
+
 	StaticText 							" "
 	Submenu "$OPTMNU_PLAYER",			"NewPlayerMenu"
 	Submenu "$OPTMNU_GAMEPLAY",			"GameplayOptions"
@@ -25,22 +25,31 @@ OptionMenu "CustomOptionsMenu"
 	Submenu "$OPTMNU_SOUND",			"SoundOptions"
 	Submenu "$OPTMNU_DISPLAY",			"VideoOptions"
 	Submenu "$OPTMNU_VIDEO",			"VideoModeMenu"
-	
+
 	StaticText 							" "
 	Submenu "$OS_TITLE",				"os_Menu"
-	
+
 	StaticText 							" "
 	SafeCommand	"$OPTMNU_DEFAULTS",		"reset2defaults"
 	SafeCommand	"$OPTMNU_RESETTOSAVED",	"reset2saved"
 	SafeCommand	"$OPTMNU_WRITEINI",		"writeini"
 	Command 	"$OPTMNU_CONSOLE",		"menuconsole"
-	
+
 	StaticText 							" "
 	Command "$OPTMNU_OPENCONFIG",		"openconfig"
 	Command "$OPTMNU_OPENSCREENSHOTS",	"openscreenshots"
 	Command "$OPTMNU_OPENSAVES",		"opensaves"
-	
+
 	StaticText 							" "
+}
+
+// Create a custom selectable option inside the user 'Custom Options Menu'
+AddOptionMenu "CustomOptionsMenu"
+{
+	// Add the display name, and the link to the page you'll create bellow
+	// When the user trigger the option, the screen will be transported to
+	// the actual page 'OptionTemplate' defined in 'MENUDEF.CUSTOM'
+    Submenu "Custom Menu Option Template", "OptionTemplate"
 }
 
 //-------------------------------------------------------------------------------------------
@@ -77,7 +86,7 @@ OptionValue "PlayerSkin"
 	// Filled in programmatically
 }
 
-OptionMenu "NewPlayerMenu" 
+OptionMenu "NewPlayerMenu"
 {
 	Title 						"$MNU_PLAYERSETUP"
 	PlayerNameField 			"$PLYRMNU_NAME"
@@ -135,7 +144,7 @@ OptionValue "Layouts"
 	2, "$OPTVAL_MODERNLEFT"
 }
 
-OptionMenu "CustomizeControls" 
+OptionMenu "CustomizeControls"
 {
 	Title 		"$CNTRLMNU_TITLE"
 	Submenu    	"$CNTRLMNU_ACTION", 		"ActionControlsMenu"
@@ -145,13 +154,13 @@ OptionMenu "CustomizeControls"
 	Submenu    	"$CNTRLMNU_OTHER", 			"OtherControlsMenu"
 	Submenu    	"$CNTRLMNU_POPUPS",			"StrifeControlsMenu"
 	Submenu    	"$MNU_MULTIPLAYER",			"ChatControlsMenu"
-	
+
 	StaticText 	""
 	Option 		"$CNTRLMNU_LAYOUT",			"cl_defaultconfiguration", "Layouts"
 	SafeCommand "$OPTMNU_DEFAULTS",			"resetb2defaults"
 }
 
-OptionMenu "ActionControlsMenu" 
+OptionMenu "ActionControlsMenu"
 {
 	Title 					"$CNTRLMNU_ACTION_TITLE"
 	ScrollTop 				2
@@ -200,7 +209,7 @@ OptionMenu "ActionControlsMenu"
 	Control    "$CNTRLMNU_STRAFE"           , "+strafe"
 }
 
-OptionMenu "ChatControlsMenu" 
+OptionMenu "ChatControlsMenu"
 {
 	Title "$MNU_MULTIPLAYER"
 	ScrollTop 2
@@ -215,7 +224,7 @@ OptionMenu "ChatControlsMenu"
 	Control    "$CNTRLMNU_TEAMSAY" , "messagemode2"
 }
 
-OptionMenu "WeaponsControlMenu" 
+OptionMenu "WeaponsControlMenu"
 {
 	Title "$CNTRLMNU_WEAPONS_TITLE"
 	ScrollTop 2
@@ -244,7 +253,7 @@ OptionMenu "WeaponsControlMenu"
 	Control    "$CNTRLMNU_USER4"            , "+user4"
 }
 
-OptionMenu "InventoryControlsMenu" 
+OptionMenu "InventoryControlsMenu"
 {
 	Title "$CNTRLMNU_INVENTORY_TITLE"
 	ScrollTop 2
@@ -266,7 +275,7 @@ OptionMenu "InventoryControlsMenu"
 	Control    "$CNTRLMNU_DROPWEAPON"   , "weapdrop"
 }
 
-OptionMenu "OtherControlsMenu" 
+OptionMenu "OtherControlsMenu"
 {
 	Title "$CNTRLMNU_OTHER_TITLE"
 	ScrollTop 2
@@ -305,7 +314,7 @@ OptionMenu "OtherControlsMenu"
 	Control    "$CNTRLMNU_QUICKLOAD"       , "quickload"
 }
 
-OptionMenu "StrifeControlsMenu" 
+OptionMenu "StrifeControlsMenu"
 {
 	Title "$CNTRLMNU_POPUPS_TITLE"
 	ScrollTop 2
@@ -351,7 +360,7 @@ OptionString "Cursors"
 	"-", "$OPTSTR_SYSTEMCURSOR"
 }
 
-OptionMenu "MouseOptions" 
+OptionMenu "MouseOptions"
 {
 	Title "$MOUSEMNU_TITLE"
 	Option "$MOUSEMNU_ENABLEMOUSE",		"use_mouse", "YesNo"
@@ -384,7 +393,7 @@ OptionMenu "MouseOptions"
 //
 //-------------------------------------------------------------------------------------------
 
-OptionMenu "JoystickOptionsDefaults" 
+OptionMenu "JoystickOptionsDefaults"
 {
 	Title "$JOYMNU_OPTIONS"
 	Option "$JOYMNU_ENABLE", "use_joystick", "YesNo"
@@ -403,7 +412,7 @@ OptionMenu "JoystickOptionsDefaults"
 	// The rest will be filled in by joystick code if devices get connected or disconnected
 }
 
-OptionMenu "JoystickOptions" 
+OptionMenu "JoystickOptions"
 {
 	Title "$JOYMNU_OPTIONS"
 }
@@ -424,11 +433,11 @@ OptionValue "Inversion"
 	1, "$OPTVAL_INVERTED"
 }
 
-OptionMenu "JoystickConfigMenu" 
+OptionMenu "JoystickConfigMenu"
 {
 	Title "$JOYMNU_TITLE"
 	Class "JoystickConfigMenu"
-	
+
 	// Will be filled in by joystick code.
 }
 
@@ -523,7 +532,7 @@ OptionValue PreferBackend
 	2, "$OPTVAL_OPENGLES"
 }
 
-OptionMenu "TrueColorOptions" 
+OptionMenu "TrueColorOptions"
 {
 	Title "$TCMNU_TITLE"
 	StaticText " "
@@ -532,7 +541,7 @@ OptionMenu "TrueColorOptions"
 	Option "$TCMNU_MIPMAP",					"r_mipmap", "OnOff"
 }
 
-OptionMenu "SWROptions" 
+OptionMenu "SWROptions"
 {
 	Title "$DSPLYMNU_SWOPT"
 	Submenu "$DSPLYMNU_TCOPT",			"TrueColorOptions"
@@ -545,7 +554,7 @@ OptionMenu "SWROptions"
 	Option "$DSPLYMNU_MODELS",					"r_models", "OnOff"
 }
 
-OptionMenu "VideoOptions" 
+OptionMenu "VideoOptions"
 {
 	Title "$DSPLYMNU_TITLE"
 
@@ -554,7 +563,7 @@ OptionMenu "VideoOptions"
 	Submenu "$DSPLYMNU_VKOPT",			"VKOptions"
 	Submenu "$GLMNU_TEXOPT", 			"GLTextureGLOptions"
 	Submenu "$GLMNU_DYNLIGHT",			"GLLightOptions"
-	
+
 	StaticText " "
 	Slider "$DSPLYMNU_SCREENSIZE",				"screenblocks", 			11.0, 12.0, 1.0, 0
 	Slider "$DSPLYMNU_GAMMA",					"vid_gamma",					0.75, 3.0, 0.05, 2
@@ -653,7 +662,7 @@ OptionValue ZDoomStrife
 	1.0, "$OPTVAL_STRIFE"
 }
 
-OptionMenu "HUDOptions" 
+OptionMenu "HUDOptions"
 {
 	Title "$HUDMNU_TITLE"
 	Submenu "$HUDMNU_SCALEOPT",				"ScalingOptions"
@@ -685,7 +694,7 @@ OptionMenu "HUDOptions"
 
 }
 
-OptionMenu "FlashOptions" 
+OptionMenu "FlashOptions"
 {
 	Title "$HUDMNU_FLASH"
 	Option "$HUDMNU_HEXENFLASHES",			"pf_hexenweaps", "ZDoomHexen"
@@ -699,12 +708,12 @@ OptionMenu "FlashOptions"
 	Slider "$DSPLYMNU_WATERFADE",				"underwater_fade_scalar", 0.0, 1.0, 0.05, 2
 }
 
-OptionMenu "ScalingOptions" 
+OptionMenu "ScalingOptions"
 {
 	Title "$SCALEMNU_TITLE"
 	ScaleSlider "$HUDMNU_UISCALE",				"uiscale", 0.0, 8.0, 1.0, "$SCALEMNU_ADAPT"
 	StaticText " "
-	
+
 	// These will need a new control type.
 	StaticText "$SCALEMNU_OVERRIDE", 1
 	ScaleSlider "$SCALEMNU_MESSAGES", 			"con_scaletext", 0.0, 8.0, 1.0, "$SCALEMNU_USEUI"
@@ -769,10 +778,10 @@ OptionValue "AltHUDAmmoOrder"
 	1, "$OPTVAL_AMMOTEXTIMAGE"
 }
 
-OptionMenu "AltHUDOptions" 
+OptionMenu "AltHUDOptions"
 {
 	Title "$ALTHUDMNU_TITLE"
-	
+
 	//Indent 220
 	Option "$ALTHUDMNU_ENABLE",					"hud_althud", "OnOff"
 	Option "$ALTHUDMNU_SHOWSECRETS",			"hud_showsecrets", "OnOff"
@@ -841,10 +850,10 @@ OptionValue SaveOrder
 	1,	"$OPTVAL_LASTSAVEDTIME"
 }
 
-OptionMenu "MiscOptions" 
+OptionMenu "MiscOptions"
 {
 	Title "$MISCMNU_TITLE"
-	
+
 	//Indent 220
 	IfOption(Windows)
 	{
@@ -855,7 +864,7 @@ OptionMenu "MiscOptions"
 	{
 		Option "$MISCMNU_MACFULLSCREENTOGGLE",	"k_allowfullscreentoggle", "OnOff"
 	}
-	
+
 	Option "$MISCMNU_QUERYIWAD",				"queryiwad", "OnOff"
 	StaticText " "
 	Option "$MISCMNU_FVIEWBOB",            "fviewbob", "OnOff"
@@ -968,7 +977,7 @@ OptionString MapMarkFont
 	"ConsoleFont", "$OPTVAL_CONSOLE"
 }
 
-OptionMenu AutomapOptions 
+OptionMenu AutomapOptions
 {
 	Title "$AUTOMAPMNU_TITLE"
 
@@ -1021,7 +1030,7 @@ OptionMenu AutomapOptions
 //
 //-------------------------------------------------------------------------------------------
 
-OptionMenu MapControlsMenu 
+OptionMenu MapControlsMenu
 {
 	Title "$MAPCNTRLMNU_TITLE"
 	ScrollTop 2
@@ -1055,7 +1064,7 @@ OptionMenu MapControlsMenu
 //
 //-------------------------------------------------------------------------------------------
 
-OptionMenu MapColorMenu 
+OptionMenu MapColorMenu
 {
 	Title "$MAPCOLORMNU_TITLE"
 	SafeCommand "$MAPCOLORMNU_DEFAULTMAPCOLORS", 		"am_restorecolors"
@@ -1082,7 +1091,7 @@ OptionMenu MapColorMenu
 	ColorPicker "$MAPCOLORMNU_PORTAL",					"am_portalcolor"
 }
 
-OptionMenu MapColorMenuCheats 
+OptionMenu MapColorMenuCheats
 {
 	Title "$MAPCOLORMNU_CHEATMODE"
 	ColorPicker "$MAPCOLORMNU_TSWALLCOLOR",				"am_tswallcolor"
@@ -1095,7 +1104,7 @@ OptionMenu MapColorMenuCheats
 	ColorPicker "$MAPCOLORMNU_COUNTITEMCOLOR",			"am_thingcolor_citem"
 }
 
-OptionMenu MapColorMenuOverlay 
+OptionMenu MapColorMenuOverlay
 {
 	Title "$MAPCOLORMNU_OVERLAY"
 	ColorPicker "$MAPCOLORMNU_YOURCOLOR",				"am_ovyourcolor"
@@ -1113,7 +1122,7 @@ OptionMenu MapColorMenuOverlay
 	ColorPicker "$MAPCOLORMNU_PORTAL",					"am_ovportalcolor"
 }
 
-OptionMenu MapColorMenuCheatsOverlay 
+OptionMenu MapColorMenuCheatsOverlay
 {
 	Title "$MAPCOLORMNU_OVCHEATMODE"
 	ColorPicker "$MAPCOLORMNU_TSWALLCOLOR",				"am_ovotherwallscolor"
@@ -1132,10 +1141,10 @@ OptionMenu MapColorMenuCheatsOverlay
 //
 //-------------------------------------------------------------------------------------------
 
-OptionMenu ColorPickerMenu 
+OptionMenu ColorPickerMenu
 {
 	Title "$MNU_COLORPICKER"
-	
+
 	// This menu will be created by the calling code
 }
 
@@ -1162,7 +1171,7 @@ OptionValue DevMessageLevels
 	4, "$OPTVAL_EVERYTHING"
 }
 
-OptionMenu MessageOptions 
+OptionMenu MessageOptions
 {
 	Title 	"$MSGMNU_TITLE"
 	Option "$MSGMNU_SHOWMESSAGES",				"show_messages", "OnOff"
@@ -1193,7 +1202,7 @@ OptionMenu MessageOptions
 //
 //-------------------------------------------------------------------------------------------
 
-OptionMenu ScoreboardOptions 
+OptionMenu ScoreboardOptions
 {
 	Title "$SCRBRDMNU_TITLE"
 	StaticText "$SCRBRDMNU_COOPERATIVE", 1
@@ -1224,7 +1233,7 @@ OptionMenu ScoreboardOptions
 //
 //-------------------------------------------------------------------------------------------
 
-OptionMenu FontOptions 
+OptionMenu FontOptions
 {
 	Title "$HUDMNU_FONTOPTIONS"
 	Option "$FONTMNU_LOG",					"log_vgafont", "YesNo"
@@ -1261,11 +1270,11 @@ OptionValue  JumpCrouchFreeLook
 }
 
 
-OptionMenu GameplayOptions 
+OptionMenu GameplayOptions
 {
 	Position -35
 	Title 	"$GMPLYMNU_TITLE"
-	
+
 	//Indent 222
 	Submenu "$GMPLYMNU_DEATHMATCH",				"DeathmatchOptions"
 	Submenu "$GMPLYMNU_COOPERATIVE",			"CoopOptions"
@@ -1309,7 +1318,7 @@ OptionMenu GameplayOptions
 	Class "GameplayMenu"
 }
 
-OptionMenu DeathmatchOptions 
+OptionMenu DeathmatchOptions
 {
 	Position -35
 	Title 	"$GMPLYMNU_DEATHMATCH"
@@ -1331,7 +1340,7 @@ OptionMenu DeathmatchOptions
 	Class "GameplayMenu"
 }
 
-OptionMenu CoopOptions 
+OptionMenu CoopOptions
 {
 	Position -35
 	Title 	"$GMPLYMNU_COOPERATIVE"
@@ -1376,7 +1385,7 @@ OptionValue CompatModes
 	4, "$OPTVAL_ZDOOM2063"
 }
 
-OptionMenu "CompatibilityOptions" 
+OptionMenu "CompatibilityOptions"
 {
 	Position -35
 	Title "$CMPTMNU_TITLE"
@@ -1391,7 +1400,7 @@ OptionMenu "CompatibilityOptions"
 	Class "CompatibilityMenu"
 }
 
-OptionMenu "CompatActorMenu" 
+OptionMenu "CompatActorMenu"
 {
 	Position -35
 	Title "$CMPTMNU_ACTORBEHAVIOR"
@@ -1408,7 +1417,7 @@ OptionMenu "CompatActorMenu"
 	Class "CompatibilityMenu"
 }
 
-OptionMenu "CompatDehackedMenu" 
+OptionMenu "CompatDehackedMenu"
 {
 	Position -35
 	Title "$CMPTMNU_DEHACKEDBEHAVIOR"
@@ -1417,7 +1426,7 @@ OptionMenu "CompatDehackedMenu"
 	Class "CompatibilityMenu"
 }
 
-OptionMenu "CompatMapMenu" 
+OptionMenu "CompatMapMenu"
 {
 	Position -35
 	Title "$CMPTMNU_MAPACTIONBEHAVIOR"
@@ -1439,7 +1448,7 @@ OptionMenu "CompatMapMenu"
 	Class "CompatibilityMenu"
 }
 
-OptionMenu "CompatPhysicsMenu" 
+OptionMenu "CompatPhysicsMenu"
 {
 	Position -35
 	Title "$CMPTMNU_PHYSICSBEHAVIOR"
@@ -1456,7 +1465,7 @@ OptionMenu "CompatPhysicsMenu"
 	Class "CompatibilityMenu"
 }
 
-OptionMenu "CompatRenderMenu" 
+OptionMenu "CompatRenderMenu"
 {
 	Position -35
 	Title "$CMPTMNU_RENDERINGBEHAVIOR"
@@ -1466,7 +1475,7 @@ OptionMenu "CompatRenderMenu"
 	Class "CompatibilityMenu"
 }
 
-OptionMenu "CompatSoundMenu" 
+OptionMenu "CompatSoundMenu"
 {
 	Position -35
 	Title "$CMPTMNU_SOUNDBEHAVIOR"
@@ -1554,7 +1563,7 @@ OptionString Resamplers
 	"Spline",		"$OPTSTR_SPLINE"
 }
 
-OptionMenu OpenALSoundItems 
+OptionMenu OpenALSoundItems
 {
 	Title "$OPENALMNU_TITLE"
 	Option "$OPENALMNU_PLAYBACKDEVICE",		"snd_aldevice",		"ALDevices"
@@ -1567,7 +1576,7 @@ OptionValue MidiDevices
 	// filled in by the sound code
 }
 
-OptionMenu SoundOptions 
+OptionMenu SoundOptions
 {
 	Title "$SNDMNU_TITLE"
 	Slider "$MODMNU_MASTERVOLUME",		"snd_mastervolume", 0, 1, 0.05, 2
@@ -1611,7 +1620,7 @@ OptionValue OplCores
 	3, "$OPTVAL_NUKEDOPL3"
 }
 
-OptionMenu AdvSoundOptions 
+OptionMenu AdvSoundOptions
 {
 	Title "$ADVSNDMNU_TITLE"
 	Option "$ADVSNDMNU_SAMPLERATE",			"snd_samplerate", "SampleRates"
@@ -1633,37 +1642,37 @@ OptionMenu AdvSoundOptions
 	Command "$SNDMNU_RESTART",			"snd_reset"
 }
 
-OptionMenu GusConfigMenu 
+OptionMenu GusConfigMenu
 {
 	Title "$ADVSNDMNU_SELCONFIG"
 }
 
-OptionMenu WildMidiConfigMenu 
+OptionMenu WildMidiConfigMenu
 {
 	Title "$ADVSNDMNU_SELCONFIG"
 }
 
-OptionMenu TimidityConfigMenu 
+OptionMenu TimidityConfigMenu
 {
 	Title "$ADVSNDMNU_SELCONFIG"
 }
 
-OptionMenu FluidPatchsetMenu 
+OptionMenu FluidPatchsetMenu
 {
 	Title "$ADVSNDMNU_SELCONFIG"
 }
 
-OptionMenu ADLBankMenu 
+OptionMenu ADLBankMenu
 {
 	Title "$ADVSNDMNU_OPLBANK"
 }
 
-OptionMenu ADLMIDICustomBanksMenu 
+OptionMenu ADLMIDICustomBanksMenu
 {
 	Title "$ADVSNDMNU_OPLBANKFILE"
 }
 
-OptionMenu OPNMIDICustomBanksMenu 
+OptionMenu OPNMIDICustomBanksMenu
 {
 	Title "$ADVSNDMNU_OPNBANKFILE"
 }
@@ -1700,7 +1709,7 @@ OptionValue ModReplayers
 	1.0, "$OPTVAL_DUMB"
 }
 
-OptionMenu ModReplayerOptions 
+OptionMenu ModReplayerOptions
 {
 	Title "$MODMNU_TITLE"
 	Option "$MODMNU_REPLAYER",				"mod_preferred_player", "ModReplayers"
@@ -1710,7 +1719,7 @@ OptionMenu ModReplayerOptions
 	Option "$MODMNU_VOLUMERAMPING",			"mod_volramp", "ModVolumeRamps"
 	StaticText " "
 	Option "$MODMNU_CHIPOMATIC",			"mod_autochip", "OnOff"
-	
+
 	// TODO if the menu system is ever rewritten: Provide a decent
 	// mechanism to edit the chip-o-matic settings like you can with
 	// the foo_dumb preferences in foobar2000.
@@ -1731,7 +1740,7 @@ OptionMenu ModReplayerOptions
 	4, "$ADVSNDMNU_GLOBAL_FREEVERB"
  }
 
-  OptionMenu MidiPlayerOptions 
+  OptionMenu MidiPlayerOptions
  {
 	Title "$SNDMNU_MIDIPLAYER"
 	Submenu "$ADVSNDMNU_FLUIDSYNTH", "FluidsynthOptions", 0, 1
@@ -1743,7 +1752,7 @@ OptionMenu ModReplayerOptions
 	Submenu "$ADVSNDMNU_OPNMIDI", "OPNOptions", 0, 1
  }
 
- OptionMenu FluidsynthOptions 
+ OptionMenu FluidsynthOptions
  {
 	Title "$ADVSNDMNU_FLUIDSYNTH"
 	LabeledSubMenu "$ADVSNDMNU_SELCONFIG",		"fluid_patchset", "FluidPatchsetMenu"
@@ -1751,22 +1760,22 @@ OptionMenu ModReplayerOptions
 	Option "$ADVSNDMNU_REVERB", 			"fluid_reverb", "OnOff"
 	Option "$ADVSNDMNU_CHORUS", 			"fluid_chorus", "OnOff"
 	Slider "$ADVSNDMNU_MIDIVOICES", 		"fluid_voices", 16, 4096, 16, 0
-	
+
 	// other CVARs need to be revieved for usefulness
  }
 
- OptionMenu TimidityOptions 
+ OptionMenu TimidityOptions
  {
 	Title "$ADVSNDMNU_TIMIDITY"
 	LabeledSubMenu "$ADVSNDMNU_SELCONFIG",		"timidity_config", "TimidityConfigMenu"
 	Option "$ADVSNDMNU_REVERB", 			"timidity_reverb", "TimidityReverb"
 	Slider "$ADVSNDMNU_REVERB_LEVEL", 		"timidity_reverb_level", 0, 127, 1, 0
 	Option "$ADVSNDMNU_CHORUS", 			"timidity_chorus", "OnOff"
-	
+
 	// other CVARs need to be revieved for usefulness
  }
 
- OptionMenu GUSOptions 
+ OptionMenu GUSOptions
  {
 	Title "$ADVSNDMNU_GUSEMULATION"
 	LabeledSubMenu "$ADVSNDMNU_SELCONFIG",		"midi_config", "GusConfigMenu"
@@ -1775,7 +1784,7 @@ OptionMenu ModReplayerOptions
 	Option "$ADVSNDMNU_GUSMEMSIZE", 		"gus_memsize", "GusMemory"
  }
 
-  OptionMenu WildMidiOptions 
+  OptionMenu WildMidiOptions
  {
 	Title "$ADVSNDMNU_WILDMIDI"
 	LabeledSubMenu "$ADVSNDMNU_SELCONFIG",		"wildmidi_config", "WildMidiConfigMenu"
@@ -1783,7 +1792,7 @@ OptionMenu ModReplayerOptions
 	Option "$ADVSNDMNU_ADVRESAMPLING",		"wildmidi_enhanced_resampling", "OnOff"
  }
 
- OptionMenu OPLOptions 
+ OptionMenu OPLOptions
  {
  	Title "$ADVSNDMNU_OPLSYNTHESIS"
 	Option "$ADVSNDMNU_OPLCORES", 			"opl_core", "OplCores"
@@ -1826,7 +1835,7 @@ OptionMenu ModReplayerOptions
 	6, "$OPTVAL_PMDWINOPNA"
  }
 
- OptionMenu ADLOptions 
+ OptionMenu ADLOptions
  {
 	Title "$ADVSNDMNU_ADLMIDI"
 	Option "$ADVSNDMNU_OPLCORES",		 "adl_emulator_id", "ADLOplCores"
@@ -1841,7 +1850,7 @@ OptionMenu ModReplayerOptions
 	LabeledSubmenu "$ADVSNDMNU_OPLBANKFILE", "adl_custom_bank", "ADLMIDICustomBanksMenu"
  }
 
- OptionMenu OPNOptions 
+ OptionMenu OPNOptions
  {
 	Title "$ADVSNDMNU_OPNMIDI"
 	Option "$ADVSNDMNU_OPNCORES",		 "opn_emulator_id", "OpnCores"
@@ -1920,18 +1929,18 @@ OptionValue MaxFps
 	200, "$OPTVAL_200FPS"
 }
 
-OptionMenu VideoModeMenu 
+OptionMenu VideoModeMenu
 {
 	Title "$VIDMNU_TITLE"
 
 	Option "$VIDMNU_PREFERBACKEND",		"vid_preferbackend", "PreferBackend"
 	StaticText " "
-	
+
 	IfOption(SWRender)
 	{
 		Option "$VIDMNU_RENDERMODE",		"vid_rendermode", "RenderMode"
 	}
-	
+
 	Option "$VIDMNU_FULLSCREEN",		"vid_fullscreen", "YesNo"
 
 	IfOption(Mac)
@@ -1948,7 +1957,7 @@ OptionMenu VideoModeMenu
 	Option "$DSPLYMNU_VSYNC",					"vid_vsync", "OnOff"
 	Slider "$VIDMNU_MAXFPS",					"vid_maxfps", 35, 500, 1
 	Option "$DSPLYMNU_CAPFPS",					"cl_capfps", "OffOn"
-	
+
 	StaticText ""
 	StaticText "$VIDMNU_CUSTOMRES"
 	TextField "$VIDMNU_CUSTOMX", menu_resolution_custom_width
@@ -1962,7 +1971,7 @@ OptionMenu VideoModeMenu
 	SubMenu "$VIDMNU_RESPRESET", CustomResolutionMenu
 }
 
-OptionMenu CustomResolutionMenu 
+OptionMenu CustomResolutionMenu
 {
 	Title "$VIDMNU_RESPRESETTTL"
 
@@ -2003,7 +2012,7 @@ OptionMenu CustomResolutionMenu
  *
  *=======================================*/
 
-OptionMenu NetworkOptions 
+OptionMenu NetworkOptions
 {
 	Title "$NETMNU_TITLE"
 	StaticText "$NETMNU_LOCALOPTIONS", 1
@@ -2192,7 +2201,7 @@ OptionValue "FuzzStyle"
 	6, "$OPTVAL_NOISE"
 	7, "$OPTVAL_SMOOTHNOISE"
 	8, "$OPTVAL_SOFTWARE"
-	
+
 	//5, "$OPTVAL_JAGGEDFUZZ" I can't see any difference between this and 4 so it's disabled for now.
 }
 
@@ -2230,7 +2239,7 @@ OptionValue ShadowMapFilter
 	3, "$OPTVAL_PCF_HIGH"
 }
 
-OptionMenu "GLTextureGLOptions" 
+OptionMenu "GLTextureGLOptions"
 {
 	Title "$GLTEXMNU_TITLE"
 	Option "$GLTEXMNU_TEXFILTER",		gl_texture_filter,				"FilterModes"
@@ -2244,7 +2253,7 @@ OptionMenu "GLTextureGLOptions"
 	{
 		Option "$GLTEXMNU_HQRESIZE",		gl_texture_hqresizemode,		"HqResizeModesNoMMX"
 	}
-	
+
 	Option "$GLTEXMNU_HQRESIZEMULT",	gl_texture_hqresizemult,		"HqResizeMultipliers"
 	StaticText "!HQRESIZE_WARNING!"
 
@@ -2257,7 +2266,7 @@ OptionMenu "GLTextureGLOptions"
 	Class "GLTextureGLOptions"
 }
 
-OptionMenu "GLLightOptions" 
+OptionMenu "GLLightOptions"
 {
 	Title "$GLLIGHTMNU_TITLE"
 	Option "$TCMNU_DYNLIGHTS",					"r_dynlights", "OnOff"
@@ -2269,7 +2278,7 @@ OptionMenu "GLLightOptions"
 	Option "$GLLIGHTMNU_LIGHTSHADOWMAPFILTER", 	gl_shadowmap_filter,	"ShadowMapFilter"
 }
 
-OptionMenu "OpenGLOptions" 
+OptionMenu "OpenGLOptions"
 {
 	Title "$GLMNU_TITLE"
 	Submenu "$GLPREFMNU_VRMODE",				"VR3DMenu"
@@ -2298,21 +2307,21 @@ OptionMenu "OpenGLOptions"
 	Option "$GLPREFMNU_MULTISAMPLE", 			gl_multisample,					"Multisample"
 }
 
-OptionMenu "VR3DMenu" 
+OptionMenu "VR3DMenu"
 {
 	Title "$GLPREFMNU_VRMODE"
 	Option "$GLMNU_3DMODE",					vr_mode, 						"VRMode"
-	
+
 	IfOption(Windows)
 	{
 		Option "$GLPREFMNU_VRQUADSTEREO",			vr_enable_quadbuffered,			"OnOff"
 	}
-	
+
 	Slider "$GLPREFMNU_VRIPD",					vr_ipd,							0.041, 0.073, 0.001, 3
 	Slider "$GLPREFMNU_VRSCREENDIST",			vr_screendist,					0.2, 10.0, 0.1, 1
 }
 
-OptionMenu "PostProcessMenu" 
+OptionMenu "PostProcessMenu"
 {
 	Title "$GLMNU_POSTPROCESS"
 	Option "$GLPREFMNU_BLOOM",		 			gl_bloom,						"OnOff"
@@ -2327,7 +2336,7 @@ OptionMenu "PostProcessMenu"
 	Option "$GLPREFMNU_PALTONEMAPORDER",		gl_paltonemap_reverselookup,	"LookupOrder"
 }
 
-OptionMenu "ReverbEdit" 
+OptionMenu "ReverbEdit"
 {
 	Class "ReverbEdit"
 	Title "$OPTMNU_REVERB"
@@ -2342,15 +2351,15 @@ OptionMenu "ReverbEdit"
 	Submenu "$REVMNU_EDIT", "ReverbSettings"
 }
 
-OptionMenu "ReverbSelect" 
+OptionMenu "ReverbSelect"
 {
 	Class "ReverbSelect"
 	Title "$REVMNU_SELECT"
-	
+
 	// filled in by code
 }
 
-OptionMenu "ReverbSettings" 
+OptionMenu "ReverbSettings"
 {
 	Title "$REVMNU_EDIT"
 	SafeCommand "$REVMNU_REVERT", "revertenvironment"
@@ -2394,7 +2403,7 @@ OptionMenu "ReverbSettings"
 	ReverbOption "$REVMNU_Modulation_Time_Scale", 36, OnOff
 }
 
-OptionMenu "ReverbNew" 
+OptionMenu "ReverbNew"
 {
 	Title "$REVMNU_NEW"
 	ReverbSelect "$REVMNU_Based_on", "ReverbSelect"
@@ -2404,7 +2413,7 @@ OptionMenu "ReverbNew"
 	Command "$REVMNU_Create", "createenvironment", 0, 1
 }
 
-OptionMenu "ReverbSave" 
+OptionMenu "ReverbSave"
 {
 	Class "ReverbSave"
 	Title "$REVMNU_SAVE"
@@ -2412,7 +2421,7 @@ OptionMenu "ReverbSave"
 	TextField "$REVMNU_File_name", "reverbsavename"
 	StaticText ""
 	StaticText "$REVMNU_Environments_to_save"
-	
+
 	// Rest is filled in by code.
 }
 
@@ -2496,7 +2505,7 @@ OptionValue "SpriteShadowModes"
  * Generic Values
  *
  *=======================================*/
- 
+
 OptionValue "YesNo"
 {
 	0, "$TXT_NO"
