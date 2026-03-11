@@ -1,17 +1,17 @@
-// ZMAPINFO is a script file that defines level-specific properties, such as 
-// sky textures, music, level labels, par times, cluster assignments, and 
+// ZMAPINFO is a script file that defines level-specific properties, such as
+// sky textures, music, level labels, par times, cluster assignments, and
 // special behaviors for maps.
 
-// The GameInfo block inside MAPINFO defines global game-level settings—things 
+// The GameInfo block inside MAPINFO defines global game-level settings—things
 // that affect the entire game, not just a single map.
 
 // https://zdoom.org/w/index.php?title=MAPINFO
 
 GameInfo
-{	
+{
 	AddEventHandlers = "ReplaceAllActors"
 
-	titlepage 					= "TITLE"
+	titlepage 					= "TITLEMAP"
 	creditpage 					= "CREDIT"
 	titlemusic					= "Music/MapDone"
 	titletime					= 10
@@ -20,8 +20,8 @@ GameInfo
 	chatsound					= "misc/chat"
 	finalemusic					= "Music/MapFinale"
 	finaleflat					= "RIPPLE1"
-	finalepage					= "VICTORY1"
-	infopage					= "HELP1", "CREDIT"
+	finalepage					= "VICTORY1", "VICTORY2"
+	infopage					= "HELP1"
 	quitsound					= "SFX/SwitchTemplateOn"
 	borderflat					= "GRNROCK"
 	border						= DoomBorder
@@ -86,13 +86,13 @@ GameInfo
 	normsidemove 				= 0x18, 0x28
 }
 
-// SpawnNums is a numeric ID used internally by the engine to spawn 
+// SpawnNums is a numeric ID used internally by the engine to spawn
 // an actor by number at runtime. It is not for map editors, that’s
 // what DoomEdNum is for.
 
 SpawnNums
 {
-	
+
 }
 
 DoomEdNums

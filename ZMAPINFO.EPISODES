@@ -1,5 +1,5 @@
-// ZMAPINFO is a script file that defines level-specific properties, such as 
-// sky textures, music, level labels, par times, cluster assignments, and 
+// ZMAPINFO is a script file that defines level-specific properties, such as
+// sky textures, music, level labels, par times, cluster assignments, and
 // special behaviors for maps.
 
 // https://zdoom.org/w/index.php?title=MAPINFO/Skill_definition
@@ -78,11 +78,17 @@ map TITLEMAP "Template TITLEMAP"
 	music = "/Sounds/Music/Map02.mid"
 }
 
+map CREDIT "Template CREDIT"
+{
+	sky1 = "F_SKY1"
+	music = "/Sounds/Music/Map01.mid"
+}
+
 map MAP01 "First Level Episode 1"
 {
 	levelnum = 1
 	next = "MAP02"
-	secretnext = "MAP31"
+	secretnext = "MAP01"
 	sky1 = "F_SKY1"
 	cluster = 20
 	par = 60
@@ -93,7 +99,7 @@ map MAP02 "First Level Episode 2"
 {
 	levelnum = 1
 	next = "MAP01"
-	secretnext = "MAP32"
+	secretnext = "MAP02"
 	sky1 = "F_SKY1"
 	cluster = 30
 	par = 90
