@@ -1,5 +1,5 @@
-// CVARINFO is a console command or table that lists all custom console 
-// variables (cvars) and their current values, often used for debugging, 
+// CVARINFO is a console command or table that lists all custom console
+// variables (cvars) and their current values, often used for debugging,
 // configuration, or saving settings.
 
 // https://zdoom.org/w/index.php?title=CVARINFO

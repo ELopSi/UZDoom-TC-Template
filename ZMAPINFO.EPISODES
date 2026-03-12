@@ -78,12 +78,6 @@ map TITLEMAP "Template TITLEMAP"
 	music = "/Sounds/Music/Map02.mid"
 }
 
-map CREDIT "Template CREDIT"
-{
-	sky1 = "F_SKY1"
-	music = "/Sounds/Music/Map01.mid"
-}
-
 map MAP01 "First Level Episode 1"
 {
 	levelnum = 1
