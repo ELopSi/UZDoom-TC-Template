@@ -35,7 +35,7 @@ OptionMenu "CustomOptionsMenu"
 	SafeCommand	"$OPTMNU_WRITEINI",		"writeini"
 	Command 	"$OPTMNU_CONSOLE",		"menuconsole"
 
-	StaticText 							" "
+	StaticText							" "
 	Command "$OPTMNU_OPENCONFIG",		"openconfig"
 	Command "$OPTMNU_OPENSCREENSHOTS",	"openscreenshots"
 	Command "$OPTMNU_OPENSAVES",		"opensaves"
@@ -88,21 +88,21 @@ OptionValue "PlayerSkin"
 
 OptionMenu "NewPlayerMenu"
 {
-	Title 						"$MNU_PLAYERSETUP"
-	PlayerNameField 			"$PLYRMNU_NAME"
-	PlayerTeamItem 				"$PLYRMNU_TEAM", "PlayerTeam"
-	PlayerColorItem 			"$PLYRMNU_PLAYERCOLOR", "PlayerColors"
-	PlayerColorSlider 			"$PLYRMNU_RED", 0
-	PlayerColorSlider 			"$PLYRMNU_GREEN", 1
-	PlayerColorSlider 			"$PLYRMNU_BLUE", 2
-	PlayerClassItem 			"$PLYRMNU_PLAYERCLASS", "PlayerClass"
-	PlayerSkinItem 				"$PLYRMNU_PLAYERSKIN", "PlayerSkin"
-	PlayerGenderItem 			"$PLYRMNU_PLAYERGENDER", "Gender"
-	AutoaimSlider 				"$PLYRMNU_AUTOAIM"
-	Option 						"$PLYRMNU_VERTSPREAD", vertspread, "OnOff"
+	Title						"$MNU_PLAYERSETUP"
+	PlayerNameField			"$PLYRMNU_NAME"
+	PlayerTeamItem				"$PLYRMNU_TEAM", "PlayerTeam"
+	PlayerColorItem			"$PLYRMNU_PLAYERCOLOR", "PlayerColors"
+	PlayerColorSlider			"$PLYRMNU_RED", 0
+	PlayerColorSlider			"$PLYRMNU_GREEN", 1
+	PlayerColorSlider			"$PLYRMNU_BLUE", 2
+	PlayerClassItem			"$PLYRMNU_PLAYERCLASS", "PlayerClass"
+	PlayerSkinItem				"$PLYRMNU_PLAYERSKIN", "PlayerSkin"
+	PlayerGenderItem			"$PLYRMNU_PLAYERGENDER", "Gender"
+	AutoaimSlider				"$PLYRMNU_AUTOAIM"
+	Option						"$PLYRMNU_VERTSPREAD", vertspread, "OnOff"
 	PlayerSwitchOnPickupItem 	"$PLYRMNU_SWITCHONPICKUP", "OffOn"
-	Option 						"$PLYRMNU_ALWAYSRUN", cl_run, "OnOff"
-	Class 						"NewPlayerMenu"
+	Option						"$PLYRMNU_ALWAYSRUN", cl_run, "OnOff"
+	Class						"NewPlayerMenu"
 }
 
 // The old player menu is kept for mods that redefine it.
@@ -167,61 +167,61 @@ OptionMenu "ActionControlsMenu"
 	StaticTextSwitchable 	"$CNTRLMNU_SWITCHTEXT1", "$CNTRLMNU_SWITCHTEXT2", "ControlMessage"
 
 	StaticText ""
-	Control    "$CNTRLMNU_ATTACK"           , "+attack"
-	Control    "$CNTRLMNU_ALTATTACK"        , "+altattack"
-	Control    "$CNTRLMNU_RELOAD"           , "+reload"
-	Control    "$CNTRLMNU_ZOOM"             , "+zoom"
+	Control    "$CNTRLMNU_ATTACK",		"+attack"
+	Control    "$CNTRLMNU_ALTATTACK",	"+altattack"
+	Control    "$CNTRLMNU_RELOAD"		,"+reload"
+	Control    "$CNTRLMNU_ZOOM",		"+zoom"
 
 	StaticText ""
-	Control    "$CNTRLMNU_USE"              , "+use"
+	Control    "$CNTRLMNU_USE",		"+use"
 
 	StaticText ""
-	Control    "$CNTRLMNU_FORWARD"          , "+forward"
-	Control    "$CNTRLMNU_BACK"             , "+back"
-	Control    "$CNTRLMNU_MOVELEFT"         , "+moveleft"
-	Control    "$CNTRLMNU_MOVERIGHT"        , "+moveright"
+	Control    "$CNTRLMNU_FORWARD",		"+forward"
+	Control    "$CNTRLMNU_BACK",		"+back"
+	Control    "$CNTRLMNU_MOVELEFT",	"+moveleft"
+	Control    "$CNTRLMNU_MOVERIGHT",	"+moveright"
 
 	StaticText ""
-	Control    "$CNTRLMNU_TURNLEFT"         , "+left"
-	Control    "$CNTRLMNU_TURNRIGHT"        , "+right"
-	Control    "$CNTRLMNU_TURN180"          , "turn180"
+	Control    "$CNTRLMNU_TURNLEFT",	"+left"
+	Control    "$CNTRLMNU_TURNRIGHT",	"+right"
+	Control    "$CNTRLMNU_TURN180",		"turn180"
 
 	StaticText ""
-	Control    "$CNTRLMNU_JUMP"             , "+jump"
-	Control    "$CNTRLMNU_CROUCH"           , "+crouch"
-	Control    "$CNTRLMNU_TOGGLECROUCH"     , "crouch"
+	Control    "$CNTRLMNU_JUMP",			"+jump"
+	Control    "$CNTRLMNU_CROUCH",			"+crouch"
+	Control    "$CNTRLMNU_TOGGLECROUCH",	"crouch"
 
 	StaticText ""
-	Control    "$CNTRLMNU_MOVEUP"           , "+moveup"
-	Control    "$CNTRLMNU_MOVEDOWN"         , "+movedown"
-	Control    "$CNTRLMNU_LAND"             , "land"
+	Control    "$CNTRLMNU_MOVEUP",		"+moveup"
+	Control    "$CNTRLMNU_MOVEDOWN",	"+movedown"
+	Control    "$CNTRLMNU_LAND",		"land"
 
 	StaticText ""
-	Control    "$CNTRLMNU_MOUSELOOK"        , "+mlook"
-	Control    "$CNTRLMNU_KEYBOARDLOOK"     , "+klook"
-	Control    "$CNTRLMNU_LOOKUP"           , "+lookup"
-	Control    "$CNTRLMNU_LOOKDOWN"         , "+lookdown"
-	Control    "$CNTRLMNU_CENTERVIEW"       , "centerview"
+	Control    "$CNTRLMNU_MOUSELOOK",		"+mlook"
+	Control    "$CNTRLMNU_KEYBOARDLOOK",	"+klook"
+	Control    "$CNTRLMNU_LOOKUP",			"+lookup"
+	Control    "$CNTRLMNU_LOOKDOWN",		"+lookdown"
+	Control    "$CNTRLMNU_CENTERVIEW",		"centerview"
 
 	StaticText ""
-	Control    "$CNTRLMNU_RUN"              , "+speed"
-	Control    "$CNTRLMNU_TOGGLERUN"        , "toggle cl_run"
-	Control    "$CNTRLMNU_STRAFE"           , "+strafe"
+	Control    "$CNTRLMNU_RUN",			"+speed"
+	Control    "$CNTRLMNU_TOGGLERUN",	"toggle cl_run"
+	Control    "$CNTRLMNU_STRAFE",		"+strafe"
 }
 
 OptionMenu "ChatControlsMenu"
 {
-	Title "$MNU_MULTIPLAYER"
-	ScrollTop 2
-	StaticTextSwitchable "$CNTRLMNU_SWITCHTEXT1", "$CNTRLMNU_SWITCHTEXT2", "ControlMessage"
+	Title					"$MNU_MULTIPLAYER"
+	ScrollTop				2
+	StaticTextSwitchable	"$CNTRLMNU_SWITCHTEXT1", "$CNTRLMNU_SWITCHTEXT2", "ControlMessage"
 
 	StaticText ""
-	Control    "$CNTRLMNU_SCOREBOARD"       , "+showscores"
-	Control    "$CNTRLMNU_TOGGLESCOREBOARD" , "togglescoreboard"
+	Control    "$CNTRLMNU_SCOREBOARD",			"+showscores"
+	Control    "$CNTRLMNU_TOGGLESCOREBOARD",	"togglescoreboard"
 
 	StaticText ""
-	Control    "$CNTRLMNU_SAY"     , "messagemode"
-	Control    "$CNTRLMNU_TEAMSAY" , "messagemode2"
+	Control    "$CNTRLMNU_SAY",			"messagemode"
+	Control    "$CNTRLMNU_TEAMSAY",		"messagemode2"
 }
 
 OptionMenu "WeaponsControlMenu"
@@ -231,99 +231,99 @@ OptionMenu "WeaponsControlMenu"
 	StaticTextSwitchable "$CNTRLMNU_SWITCHTEXT1", "$CNTRLMNU_SWITCHTEXT2", "ControlMessage"
 
 	StaticText ""
-	Control    "$CNTRLMNU_NEXTWEAPON"     , "weapnext"
-	Control    "$CNTRLMNU_PREVIOUSWEAPON" , "weapprev"
+	Control    "$CNTRLMNU_NEXTWEAPON",		"weapnext"
+	Control    "$CNTRLMNU_PREVIOUSWEAPON",	"weapprev"
 
 	StaticText ""
-	Control    "$CNTRLMNU_SLOT1"          , "slot 1"
-	Control    "$CNTRLMNU_SLOT2"          , "slot 2"
-	Control    "$CNTRLMNU_SLOT3"          , "slot 3"
-	Control    "$CNTRLMNU_SLOT4"          , "slot 4"
-	Control    "$CNTRLMNU_SLOT5"          , "slot 5"
-	Control    "$CNTRLMNU_SLOT6"          , "slot 6"
-	Control    "$CNTRLMNU_SLOT7"          , "slot 7"
-	Control    "$CNTRLMNU_SLOT8"          , "slot 8"
-	Control    "$CNTRLMNU_SLOT9"          , "slot 9"
-	Control    "$CNTRLMNU_SLOT0"          , "slot 0"
+	Control    "$CNTRLMNU_SLOT1",	"slot 1"
+	Control    "$CNTRLMNU_SLOT2",	"slot 2"
+	Control    "$CNTRLMNU_SLOT3",	"slot 3"
+	Control    "$CNTRLMNU_SLOT4",	"slot 4"
+	Control    "$CNTRLMNU_SLOT5",	"slot 5"
+	Control    "$CNTRLMNU_SLOT6",	"slot 6"
+	Control    "$CNTRLMNU_SLOT7",	"slot 7"
+	Control    "$CNTRLMNU_SLOT8",	"slot 8"
+	Control    "$CNTRLMNU_SLOT9",	"slot 9"
+	Control    "$CNTRLMNU_SLOT0",	"slot 0"
 
 	StaticText ""
-	Control    "$CNTRLMNU_USER1"            , "+user1"
-	Control    "$CNTRLMNU_USER2"            , "+user2"
-	Control    "$CNTRLMNU_USER3"            , "+user3"
-	Control    "$CNTRLMNU_USER4"            , "+user4"
+	Control    "$CNTRLMNU_USER1",	"+user1"
+	Control    "$CNTRLMNU_USER2",	"+user2"
+	Control    "$CNTRLMNU_USER3",	"+user3"
+	Control    "$CNTRLMNU_USER4",	"+user4"
 }
 
 OptionMenu "InventoryControlsMenu"
 {
-	Title "$CNTRLMNU_INVENTORY_TITLE"
-	ScrollTop 2
-	StaticTextSwitchable "$CNTRLMNU_SWITCHTEXT1", "$CNTRLMNU_SWITCHTEXT2", "ControlMessage"
+	Title					"$CNTRLMNU_INVENTORY_TITLE"
+	ScrollTop				2
+	StaticTextSwitchable	"$CNTRLMNU_SWITCHTEXT1", "$CNTRLMNU_SWITCHTEXT2", "ControlMessage"
 
 	StaticText ""
-	Control    "$CNTRLMNU_USEITEM"      , "invuse"
-	Control    "$CNTRLMNU_USEALLITEMS"  , "invuseall"
+	Control    "$CNTRLMNU_USEITEM",		"invuse"
+	Control    "$CNTRLMNU_USEALLITEMS",	"invuseall"
 
 	StaticText ""
-	Control    "$CNTRLMNU_NEXTITEM"     , "invnext"
-	Control    "$CNTRLMNU_PREVIOUSITEM" , "invprev"
+	Control    "$CNTRLMNU_NEXTITEM",		"invnext"
+	Control    "$CNTRLMNU_PREVIOUSITEM",	"invprev"
 
 	StaticText ""
-	Control    "$CNTRLMNU_DROPITEM"     , "invdrop"
-	Control    "$CNTRLMNU_QUERYITEM"    , "invquery"
+	Control    "$CNTRLMNU_DROPITEM",	"invdrop"
+	Control    "$CNTRLMNU_QUERYITEM",	"invquery"
 
 	StaticText ""
-	Control    "$CNTRLMNU_DROPWEAPON"   , "weapdrop"
+	Control    "$CNTRLMNU_DROPWEAPON",	"weapdrop"
 }
 
 OptionMenu "OtherControlsMenu"
 {
-	Title "$CNTRLMNU_OTHER_TITLE"
-	ScrollTop 2
-	StaticTextSwitchable "$CNTRLMNU_SWITCHTEXT1", "$CNTRLMNU_SWITCHTEXT2", "ControlMessage"
+	Title					"$CNTRLMNU_OTHER_TITLE"
+	ScrollTop				2
+	StaticTextSwitchable	"$CNTRLMNU_SWITCHTEXT1", "$CNTRLMNU_SWITCHTEXT2", "ControlMessage"
 
 	StaticText ""
-	Control    "$CNTRLMNU_AUTOMAP"         , "togglemap"
+	Control    "$CNTRLMNU_AUTOMAP",			"togglemap"
 
 	StaticText ""
-	Control    "$CNTRLMNU_CHASECAM"        , "chase"
-	Control    "$CNTRLMNU_COOPSPY"         , "spynext"
+	Control    "$CNTRLMNU_CHASECAM",	"chase"
+	Control    "$CNTRLMNU_COOPSPY",		"spynext"
 
 	StaticText ""
-	Control    "$CNTRLMNU_SCREENSHOT"      , "screenshot"
-	Control    "$CNTRLMNU_CONSOLE"         , "toggleconsole"
-	Control    "$CNTRLMNU_PAUSE"           , "pause"
+	Control    "$CNTRLMNU_SCREENSHOT",	"screenshot"
+	Control    "$CNTRLMNU_CONSOLE",		"toggleconsole"
+	Control    "$CNTRLMNU_PAUSE",		"pause"
 
 	StaticText ""
-	Control    "$CNTRLMNU_DISPLAY_INC"     , "sizeup"
-	Control    "$CNTRLMNU_DISPLAY_DEC"     , "sizedown"
-	Control    "$CNTRLMNU_TOGGLE_MESSAGES" , "togglemessages"
-	Control    "$CNTRLMNU_ADJUST_GAMMA"    , "bumpgamma"
+	Control    "$CNTRLMNU_DISPLAY_INC",			"sizeup"
+	Control    "$CNTRLMNU_DISPLAY_DEC",			"sizedown"
+	Control    "$CNTRLMNU_TOGGLE_MESSAGES",		"togglemessages"
+	Control    "$CNTRLMNU_ADJUST_GAMMA",		"bumpgamma"
 
 	StaticText ""
-	Control    "$CNTRLMNU_OPEN_MAIN"       , "menu_main"
-	Control    "$CNTRLMNU_OPEN_HELP"       , "menu_help"
-	Control    "$CNTRLMNU_OPEN_SAVE"       , "menu_save"
-	Control    "$CNTRLMNU_OPEN_LOAD"       , "menu_load"
-	Control    "$CNTRLMNU_OPEN_OPTIONS"    , "menu_options"
-	Control    "$CNTRLMNU_OPEN_DISPLAY"    , "menu_display"
-	Control    "$CNTRLMNU_EXIT_TO_MAIN"    , "menu_endgame"
-	Control    "$CNTRLMNU_MENU_QUIT"       , "menu_quit"
+	Control    "$CNTRLMNU_OPEN_MAIN",		"menu_main"
+	Control    "$CNTRLMNU_OPEN_HELP",		"menu_help"
+	Control    "$CNTRLMNU_OPEN_SAVE",		"menu_save"
+	Control    "$CNTRLMNU_OPEN_LOAD",		"menu_load"
+	Control    "$CNTRLMNU_OPEN_OPTIONS",	"menu_options"
+	Control    "$CNTRLMNU_OPEN_DISPLAY",	"menu_display"
+	Control    "$CNTRLMNU_EXIT_TO_MAIN",	"menu_endgame"
+	Control    "$CNTRLMNU_MENU_QUIT",		"menu_quit"
 
 	StaticText ""
-	Control    "$CNTRLMNU_QUICKSAVE"       , "quicksave"
-	Control    "$CNTRLMNU_QUICKLOAD"       , "quickload"
+	Control    "$CNTRLMNU_QUICKSAVE",	"quicksave"
+	Control    "$CNTRLMNU_QUICKLOAD",	"quickload"
 }
 
 OptionMenu "StrifeControlsMenu"
 {
-	Title "$CNTRLMNU_POPUPS_TITLE"
-	ScrollTop 2
-	StaticTextSwitchable "$CNTRLMNU_SWITCHTEXT1", "$CNTRLMNU_SWITCHTEXT2", "ControlMessage"
+	Title					"$CNTRLMNU_POPUPS_TITLE"
+	ScrollTop				2
+	StaticTextSwitchable	"$CNTRLMNU_SWITCHTEXT1", "$CNTRLMNU_SWITCHTEXT2", "ControlMessage"
 
 	StaticText ""
-	Control    "$CNTRLMNU_MISSION" , "showpop 1"
-	Control    "$CNTRLMNU_KEYS"    , "showpop 2"
-	Control    "$CNTRLMNU_STATS"   , "showpop 3"
+	Control    "$CNTRLMNU_MISSION",		"showpop 1"
+	Control    "$CNTRLMNU_KEYS",		"showpop 2"
+	Control    "$CNTRLMNU_STATS",		"showpop 3"
 }
 
 //-------------------------------------------------------------------------------------------
@@ -334,30 +334,30 @@ OptionMenu "StrifeControlsMenu"
 
 OptionValue "Corners"
 {
-	-1, "$OPTVAL_OFF"
-	0, "$OPTVAL_UPPERLEFT"
-	1, "$OPTVAL_UPPERRIGHT"
-	2, "$OPTVAL_LOWERLEFT"
-	3, "$OPTVAL_LOWERRIGHT"
+	-1,	"$OPTVAL_OFF"
+	0,	"$OPTVAL_UPPERLEFT"
+	1,	"$OPTVAL_UPPERRIGHT"
+	2,	"$OPTVAL_LOWERLEFT"
+	3,	"$OPTVAL_LOWERRIGHT"
 }
 
 OptionValue "MenuMouse"
 {
-	0, "$TXT_NO"
-	1, "$TXT_YES"
-	2, "$OPTVAL_TOUCHSCREENLIKE"
+	0,	"$TXT_NO"
+	1,	"$TXT_YES"
+	2,	"$OPTVAL_TOUCHSCREENLIKE"
 }
 
 OptionString "Cursors"
 {
-	"None", "$OPTVAL_DEFAULT"
-	"cursor", "$OPTSTR_SIMPLEARROW"
-	"doomcurs", "$OPTVAL_DOOM"
-	"herecurs", "$OPTSTR_HERETIC"
-	"hexncurs", "$OPTVAL_HEXEN"
-	"strfcurs", "$OPTVAL_STRIFE"
-	"chexcurs", "$OPTSTR_CHEX"
-	"-", "$OPTSTR_SYSTEMCURSOR"
+	"None",			"$OPTVAL_DEFAULT"
+	"cursor",		"$OPTSTR_SIMPLEARROW"
+	"doomcurs",		"$OPTVAL_DOOM"
+	"herecurs",		"$OPTSTR_HERETIC"
+	"hexncurs",		"$OPTVAL_HEXEN"
+	"strfcurs",		"$OPTVAL_STRIFE"
+	"chexcurs",		"$OPTSTR_CHEX"
+	"-",			"$OPTSTR_SYSTEMCURSOR"
 }
 
 OptionMenu "MouseOptions"
@@ -366,10 +366,12 @@ OptionMenu "MouseOptions"
 	Option "$MOUSEMNU_ENABLEMOUSE",		"use_mouse", "YesNo"
 	Option "$MOUSEMNU_MOUSEINMENU",		"m_use_mouse", "MenuMouse", "use_mouse"
 	Option "$MOUSEMNU_SHOWBACKBUTTON",	"m_show_backbutton", "Corners", "use_mouse"
+
 	IfOption(Windows)
 	{
 		Option "$MOUSEMNU_SWAPBUTTONS", "m_swapbuttons", "YesNo"
 	}
+
 	Option "$MOUSEMNU_CURSOR",			"vid_cursor", "Cursors"
 	StaticText 	""
 	Slider "$MOUSEMNU_SENSITIVITY_X",	"m_sensitivity_x", 0.1, 8, 0.05
@@ -715,18 +717,19 @@ OptionMenu "ScalingOptions"
 	StaticText " "
 
 	// These will need a new control type.
-	StaticText "$SCALEMNU_OVERRIDE", 1
-	ScaleSlider "$SCALEMNU_MESSAGES", 			"con_scaletext", 0.0, 8.0, 1.0, "$SCALEMNU_USEUI"
-	ScaleSlider "$SCALEMNU_CONSOLE", 			"con_scale", 0.0, 8.0, 1.0, "$SCALEMNU_USEUI"
+	StaticText "$SCALEMNU_OVERRIDE",			1
+	ScaleSlider "$SCALEMNU_MESSAGES",			"con_scaletext", 0.0, 8.0, 1.0, "$SCALEMNU_USEUI"
+	ScaleSlider "$SCALEMNU_CONSOLE",			"con_scale", 0.0, 8.0, 1.0, "$SCALEMNU_USEUI"
 	Option "$SCALEMNU_HUD_OLDSCALE",			"hud_oldscale", "OnOff"
 	Slider "$SCALEMNU_HUD_SCALEFACTOR",			"hud_scalefactor", 0.0, 1.0, 0.025, 3, "hud_oldscale", 1
 	ScaleSlider "$SCALEMNU_STATBAR",			"st_scale", -1.0, 8.0, 1.0, "$SCALEMNU_USEUI", "$SCALEMNU_USEFS", "hud_oldscale"
-	ScaleSlider "$SCALEMNU_HUD", 				"hud_scale", -1.0, 8.0, 1.0, "$SCALEMNU_USEUI", "$SCALEMNU_USEFS", "hud_oldscale"
+	ScaleSlider "$SCALEMNU_HUD",				"hud_scale", -1.0, 8.0, 1.0, "$SCALEMNU_USEUI", "$SCALEMNU_USEFS", "hud_oldscale"
 	ScaleSlider "$SCALEMNU_ALTHUD",				"hud_althudscale", 0.0, 8.0, 1.0, "$SCALEMNU_USEUI", "", "hud_oldscale"
 	StaticText " "
-	Option "$SCALEMNU_HUDASPECT", 				"hud_aspectscale", "OnOff"
+
+	Option "$SCALEMNU_HUDASPECT",				"hud_aspectscale", "OnOff"
 	StaticText " "
-	StaticText "$SCALEMNU_SCALECLASSIC", 1
+	StaticText "$SCALEMNU_SCALECLASSIC",		1
 	Option "$SCALEMNU_INTER",					"inter_classic_scaling", "OnOff"
 	Option "$SCALEMNU_BORDER",					"ui_screenborder_classic_scaling", "OnOff"
 	Slider "$SCALEMNU_FACTOR",					"classic_scaling_factor", 1.0, 3.0, 0.2, 1
@@ -860,6 +863,7 @@ OptionMenu "MiscOptions"
 		Option "$MISCMNU_MERGEKEYS", 			"k_mergekeys", "OnOff"
 		Option "$MISCMNU_WINFULLSCREENTOGGLE",	"k_allowfullscreentoggle", "OnOff"
 	}
+
 	IfOption(Mac)
 	{
 		Option "$MISCMNU_MACFULLSCREENTOGGLE",	"k_allowfullscreentoggle", "OnOff"
