@@ -1,6 +1,6 @@
-// IWADINFO refers to the metadata that identifies an IWAD file 
-// (like DOOM.WAD or DOOM2.WAD), including its title, version, and required 
-// game content, which the engine uses to determine compatibility and load 
+// IWADINFO refers to the metadata that identifies an IWAD file
+// (like DOOM.WAD or DOOM2.WAD), including its title, version, and required
+// game content, which the engine uses to determine compatibility and load
 // the correct resources.
 
 // https://zdoom.org/w/index.php?title=IWADINFO
@@ -12,4 +12,5 @@ IWAD
 	Autoname = "UZdoomTCTemplate"
 	Config = "UZdoomTCTemplateConfig"
 	BannerColors = "ff ff ff", "c9 00 00"
+	StartupType = "Hexen"
 }
