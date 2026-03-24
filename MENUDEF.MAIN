@@ -48,7 +48,6 @@ ListMenu "LoadGameMenu"
 	CaptionItem "$MNU_LOADGAME"
 	Class "LoadMenu"
 	Size Clean
-
 }
 
 ListMenu "SaveGameMenu"

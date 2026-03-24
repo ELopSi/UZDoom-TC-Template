@@ -89,13 +89,13 @@ OptionValue "PlayerSkin"
 OptionMenu "NewPlayerMenu"
 {
 	Title						"$MNU_PLAYERSETUP"
-	PlayerNameField			"$PLYRMNU_NAME"
+	PlayerNameField				"$PLYRMNU_NAME"
 	PlayerTeamItem				"$PLYRMNU_TEAM", "PlayerTeam"
-	PlayerColorItem			"$PLYRMNU_PLAYERCOLOR", "PlayerColors"
+	PlayerColorItem				"$PLYRMNU_PLAYERCOLOR", "PlayerColors"
 	PlayerColorSlider			"$PLYRMNU_RED", 0
 	PlayerColorSlider			"$PLYRMNU_GREEN", 1
 	PlayerColorSlider			"$PLYRMNU_BLUE", 2
-	PlayerClassItem			"$PLYRMNU_PLAYERCLASS", "PlayerClass"
+	PlayerClassItem				"$PLYRMNU_PLAYERCLASS", "PlayerClass"
 	PlayerSkinItem				"$PLYRMNU_PLAYERSKIN", "PlayerSkin"
 	PlayerGenderItem			"$PLYRMNU_PLAYERGENDER", "Gender"
 	AutoaimSlider				"$PLYRMNU_AUTOAIM"
@@ -538,42 +538,42 @@ OptionMenu "TrueColorOptions"
 {
 	Title "$TCMNU_TITLE"
 	StaticText " "
-	Option "$TCMNU_MINFILTER",				"r_minfilter", "OnOff"
-	Option "$TCMNU_MAGFILTER",				"r_magfilter", "OnOff"
-	Option "$TCMNU_MIPMAP",					"r_mipmap", "OnOff"
+	Option "$TCMNU_MINFILTER",		"r_minfilter", "OnOff"
+	Option "$TCMNU_MAGFILTER",		"r_magfilter", "OnOff"
+	Option "$TCMNU_MIPMAP",			"r_mipmap", "OnOff"
 }
 
 OptionMenu "SWROptions"
 {
 	Title "$DSPLYMNU_SWOPT"
 	Submenu "$DSPLYMNU_TCOPT",			"TrueColorOptions"
-	Option "$DSPLYMNU_BLENDMETHOD",				"r_blendmethod", "BlendMethods"
+	Option "$DSPLYMNU_BLENDMETHOD",		"r_blendmethod", "BlendMethods"
 	StaticText " "
-	Option "$DSPLYMNU_SKYMODE",					"r_skymode", "SkyModes"
-	Option "$DSPLYMNU_LINEARSKY",				"r_linearsky", "OnOff"
-	Option "$DSPLYMNU_GZDFULLBRIGHT",			"r_fullbrightignoresectorcolor", "OnOff"
-	Option "$DSPLYMNU_SCALEFUZZ",				"r_fuzzscale", "OnOff"
-	Option "$DSPLYMNU_MODELS",					"r_models", "OnOff"
+	Option "$DSPLYMNU_SKYMODE",			"r_skymode", "SkyModes"
+	Option "$DSPLYMNU_LINEARSKY",		"r_linearsky", "OnOff"
+	Option "$DSPLYMNU_GZDFULLBRIGHT",	"r_fullbrightignoresectorcolor", "OnOff"
+	Option "$DSPLYMNU_SCALEFUZZ",		"r_fuzzscale", "OnOff"
+	Option "$DSPLYMNU_MODELS",			"r_models", "OnOff"
 }
 
 OptionMenu "VideoOptions"
 {
 	Title "$DSPLYMNU_TITLE"
 
-	Submenu "$DSPLYMNU_GLOPT", 			"OpenGLOptions"
-	Submenu "$DSPLYMNU_SWOPT", 			"SWROptions"
-	Submenu "$DSPLYMNU_VKOPT",			"VKOptions"
-	Submenu "$GLMNU_TEXOPT", 			"GLTextureGLOptions"
-	Submenu "$GLMNU_DYNLIGHT",			"GLLightOptions"
+	Submenu "$DSPLYMNU_GLOPT",		"OpenGLOptions"
+	Submenu "$DSPLYMNU_SWOPT",		"SWROptions"
+	Submenu "$DSPLYMNU_VKOPT",		"VKOptions"
+	Submenu "$GLMNU_TEXOPT",		"GLTextureGLOptions"
+	Submenu "$GLMNU_DYNLIGHT",		"GLLightOptions"
 
 	StaticText " "
-	Slider "$DSPLYMNU_SCREENSIZE",				"screenblocks", 			11.0, 12.0, 1.0, 0
-	Slider "$DSPLYMNU_GAMMA",					"vid_gamma",					0.75, 3.0, 0.05, 2
-	Slider "$DSPLYMNU_BRIGHTNESS",				"vid_brightness",				-0.8,0.8, 0.05,2
-	Slider "$DSPLYMNU_CONTRAST",				"vid_contrast",	   				0.1, 3.0, 0.1
-	Slider "$DSPLYMNU_SATURATION",				"vid_saturation",  				-3.0, 3.0, 0.25, 2
+	Slider "$DSPLYMNU_SCREENSIZE",		"screenblocks",		11.0, 12.0, 1.0, 0
+	Slider "$DSPLYMNU_GAMMA",			"vid_gamma",		.75, 3.0, 0.05, 2
+	Slider "$DSPLYMNU_BRIGHTNESS",		"vid_brightness",	-0.8,0.8, 0.05,2
+	Slider "$DSPLYMNU_CONTRAST",		"vid_contrast",		0.1, 3.0, 0.1
+	Slider "$DSPLYMNU_SATURATION",		"vid_saturation",	-3.0, 3.0, 0.25, 2
 	StaticText " "
-	Slider "$DSPLYMNU_FOV",						"fov",							75.0, 120.0, 0.1, 1
+	Slider "$DSPLYMNU_FOV",		"fov",		75.0, 120.0, 0.1, 1
 	StaticText " "
 	Option "$DSPLYMNU_SPRITESHADOW",			"r_actorspriteshadow", "SpriteShadowModes"
 	Option "$DSPLYMNU_CUSTOMINVERTMAP",			"cl_customizeinvulmap", "OnOff"

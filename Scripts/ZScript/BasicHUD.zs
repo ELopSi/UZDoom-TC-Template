@@ -98,7 +98,6 @@ class BasicHUD : BaseStatusBar
 			DrawString(customBigFont, customHealthString, customHealthPosition, DI_SCREEN_LEFT_BOTTOM | DI_TEXT_ALIGN_LEFT, Font.CR_White);
 			DrawString(customBigFont, customArmorString, customArmorPosition, DI_SCREEN_LEFT_BOTTOM | DI_TEXT_ALIGN_LEFT, Font.CR_White);
 			DrawString(customSmallFont, customMedalString, customMedalPosition, DI_SCREEN_LEFT_BOTTOM | DI_TEXT_ALIGN_RIGHT, Font.CR_White);
-
 		}
 	}
 }
